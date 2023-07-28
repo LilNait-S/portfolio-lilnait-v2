@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const Twitter = () => {
+const TwitterMovile = () => {
   return (
     <Link
       href="/"
@@ -15,4 +15,4 @@ const Twitter = () => {
   );
 };
 
-export default Twitter;
+export default TwitterMovile;

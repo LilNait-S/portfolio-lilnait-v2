@@ -1,6 +1,6 @@
 'use client'
 
-const Hour = () => {
+const HourMovile = () => {
   const formatedHours = new Date(Date.now()).toLocaleString("es-ES", {
     hour: "2-digit",
     minute: "2-digit",
@@ -8,10 +8,10 @@ const Hour = () => {
   });
 
   return (
-    <span className="text-3xl font-bold uppercase justify-center items-center h-full hidden lg:flex">
+    <span className="text-3xl font-bold uppercase flex justify-center items-center h-full">
       {formatedHours}
     </span>
   );
 };
 
-export default Hour;
+export default HourMovile;

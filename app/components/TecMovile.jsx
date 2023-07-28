@@ -1,12 +1,12 @@
 import { tecnologys } from "@/constant/index.js";
 
-const Tec = () => {
+const TecMovile = () => {
 
   const tecnologysSorted = tecnologys.sort((a, b) => a.title.localeCompare(b.title));
   return (
-    <div className="px-6 py-4 hidden lg:block">
+    <div className="px-4 py-2 lg:px-6 lg:py-4">
       <span className="purple_gradient font-bold text-2xl">Tecnologías</span>
-      <div className="flex gap-8 flex-wrap mt-4 justify-center ">
+      <div className="flex gap-6 lg:gap-8 flex-wrap lg:mt-4 justify-center ">
         {tecnologysSorted.map(({ title, img, alt }) => (
           <div
             key={title}
@@ -22,4 +22,4 @@ const Tec = () => {
   );
 };
 
-export default Tec;
+export default TecMovile;

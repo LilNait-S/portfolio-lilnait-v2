@@ -10,9 +10,13 @@ const LargeDate = () => {
     weekday: "long",
   });
   return (
-    <div className="flex flex-col items-start justify-center h-full px-10">
-      <span className="font-bold purple_gradient capitalize text-xl leading-5">{weekday}</span>
-      <span>{longDate}</span>
+    <div className="flex justify-center items-center h-full">
+      <div className="flex flex-col items-start justify-center">
+        <span className="font-bold purple_gradient capitalize text-xl leading-5">
+          {weekday}
+        </span>
+        <span>{longDate}</span>
+      </div>
     </div>
   );
 };
