@@ -160,7 +160,7 @@ export const Practices = [
       title: "To do List",
       paragraph: "Aplicación para anotar cosas.",
       date: "2023-02-06",
-      src: "/to-do-list.png",
+      src: "/todolist.png",
       alt: "To do List photo",
       LinkGithub: "https://github.com/LilNait-S/to-do-list",
       LinkProject: "https://to-do-list-six-mu.vercel.app/",
