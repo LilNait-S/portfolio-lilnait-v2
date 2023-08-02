@@ -1,208 +1,198 @@
+import { IconSanity, IconVercel } from "@/app/components/Icons/Tags";
+import {
+  IconFigma,
+  IconGraphQL,
+  IconJavascript,
+  IconMongoDB,
+  IconNextjs,
+  IconNodejs,
+  IconReact,
+  IconSupabase,
+  IconTailwind,
+  IconTypeScript,
+} from "@/app/components/Icons/Tecnologys";
+
 export const tecnologys = [
   {
     title: "MongoDB",
-    img: "/mongodb.svg",
-    alt: "MongoDB logo",
+    icon: <IconMongoDB />,
   },
   {
     title: "Figma",
-    img: "/figma.svg",
-    alt: "Figma logo",
+    icon: <IconFigma />,
   },
   {
     title: "React",
-    img: "/react.svg",
-    alt: "React logo",
+    icon: <IconReact />,
   },
   {
     title: "Next js",
-    img: "/nextjs.svg",
-    alt: "Next js logo",
+    icon: <IconNextjs />,
   },
   {
     title: "Javascript",
-    img: "/javascript.svg",
-    alt: "Javascript logo",
+    icon: <IconJavascript />,
   },
   {
     title: "Tailwind",
-    img: "/tailwind.svg",
-    alt: "Tailwind logo",
+    icon: <IconTailwind />,
   },
   {
     title: "GraphQL",
-    img: "/graphql.svg",
-    alt: "GraphQL logo",
+    icon: <IconGraphQL />,
   },
   {
     title: "Supabase",
-    img: "/supabase.svg",
-    alt: "Supabase logo",
+    icon: <IconSupabase />,
   },
   {
     title: "Node js",
-    img: "/nodejs.svg",
-    alt: "Node js logo",
+    icon: <IconNodejs />,
   },
   {
     title: "TypeScript",
-    img: "/typescript.svg",
-    alt: "TypeScript logo",
+    icon: <IconTypeScript />,
   },
 ];
 
-/* Icons */
-export const IconsPromptopia = [
-  {
-    title: "Next js",
-    img: "/nextjs.svg",
-    alt: "Next js logo",
-  },
-  {
-    title: "MongoDB",
-    img: "/mongodb.svg",
-    alt: "MongoDB logo",
-  },
-  {
-    title: "Vercel",
-    img: "/vercel.svg",
-    alt: "vercel logo",
-  },
-];
+/* Work */
 
-export const IconsPokepage = [
+export const Works = [
   {
-    title: "Figma",
-    img: "/figma.svg",
-    alt: "Figma logo",
-  },
-  {
-    title: "React",
-    img: "/react.svg",
-    alt: "React logo",
-  },
-  {
-    title: "Tailwind",
-    img: "/tailwind.svg",
-    alt: "Tailwind logo",
-  },
-  {
-    title: "TypeScript",
-    img: "/typescript.svg",
-    alt: "TypeScript logo",
-  },
-];
-
-export const IconsYariga = [
-  {
-    title: "React",
-    img: "/react.svg",
-    alt: "React logo",
-  },
-  {
-    title: "TypeScript",
-    img: "/typescript.svg",
-    alt: "TypeScript logo",
-  },
-];
-
-export const IconsToDoList = [
-  {
-    title: "React",
-    img: "/react.svg",
-    alt: "React logo",
-  },
-  {
-    title: "Tailwind",
-    img: "/tailwind.svg",
-    alt: "Tailwind logo",
-  },
-  {
-    title: "TypeScript",
-    img: "/typescript.svg",
-    alt: "TypeScript logo",
-  },
-];
-
-export const IconsWeather = [
-  {
-    title: "Figma",
-    img: "/figma.svg",
-    alt: "Figma logo",
-  },
-  {
-    title: "React",
-    img: "/react.svg",
-    alt: "React logo",
-  },
-  {
-    title: "Javascript",
-    img: "/javascript.svg",
-    alt: "Javascript logo",
-  },
-  {
-    title: "Tailwind",
-    img: "/tailwind.svg",
-    alt: "Tailwind logo",
+    work: {
+      title: "Seometric.io",
+      paragraph:
+        "Desarrollé un dashboard que ha permitido potenciar el desarrollo y la efectividad de la IA, brindando a los usuarios un entorno completo para interactuar con ella, entrenarla y optimizar su rendimiento.",
+      date: "2023-03-20",
+      src: "/dashboardIA.png",
+      alt: "Landing page dashboardIA",
+      linkGithub: null,
+      linkProject: null,
+      icons: [
+        { title: "Figma", icon: <IconFigma width="20" height="20" /> },
+        { title: "Next js", icon: <IconNextjs width="20" height="20" /> },
+        { title: "Supabase", icon: <IconSupabase width="20" height="20" /> },
+        { title: "Vercel", icon: <IconVercel width="20" height="20" /> },
+      ],
+    },
+    work: {
+      title: "Aini28",
+      paragraph:
+        "Desarrollé un ecommerce de peluches. Incluye filtros portamaño, buscador, carrito de compras y cotizador.También se destaca por ofertas especiales, envíosrápidos y atención al cliente dedicada. El proyecto busca brindar una experiencia de compra emocionante y satisfactoria.",
+      date: "2023-01-30",
+      src: "/.png",
+      alt: "Landing page Aini28",
+      linkGithub: null,
+      linkProject: "https://aini28.com/",
+      icons: [
+        { title: "Figma", icon: <IconFigma width="20" height="20" /> },
+        { title: "Next js", icon: <IconNextjs width="20" height="20" /> },
+        { title: "Sanity", icon: <IconSanity width="20" height="20" /> },
+        { title: "Vercel", icon: <IconVercel width="20" height="20" /> },
+      ],
+    },
   },
 ];
 
 /* practices */
 
-export const practices = [
+export const Practices = [
   {
-    title: "Promptopia",
-    paragraph:
-      "Sitio donde puedes compartir tus mejores prompt con la comunidad, puedes registrarte con tu gmail, crea, edita o comparte tus prompt.",
-    date: "2023-06-28", // Formato: "YYYY-MM-DD"
-    // date: new Date(2023, 0, 1),
-    src: "/promptopia.png",
-    alt: "Promptopia photo",
-    LinkGithub: "https://github.com/LilNait-S/promptopia",
-    LinkProject: "https://promptopia-hw6vooo66-lilnait-s.vercel.app/",
-    icons: IconsPromptopia,
+    Project: {
+      title: "Promptopia",
+      paragraph:
+        "Sitio donde puedes compartir tus mejores prompt con la comunidad, puedes registrarte con tu gmail, crea, edita o comparte tus prompt.",
+      date: "2023-06-28", // Formato: "YYYY-MM-DD"
+      // date: new Date(2023, 0, 1),
+      src: "/promptopia.png",
+      alt: "Promptopia photo",
+      LinkGithub: "https://github.com/LilNait-S/promptopia",
+      LinkProject: "https://promptopia-hw6vooo66-lilnait-s.vercel.app/",
+      icons: [
+        { title: "Next js", icon: <IconNextjs width="20" height="20" /> },
+        { title: "MongoDB", icon: <IconMongoDB width="20" height="20" /> },
+        { title: "Vercel", icon: <IconVercel width="20" height="20" /> },
+      ],
+    },
   },
   {
-    title: "Pokepage",
-    paragraph:
-      "Pokedex de Pokémon, desarrollado con TypeScript y Vite. Esta aplicación web ofrece una experiencia interactiva y rápida para explorar una amplia variedad de Pokémon.",
-    date: "2023-01-31",
-    src: "/pokepage.png",
-    alt: "Pokepage photo",
-    LinkGithub: "https://github.com/LilNait-S/pokepage",
-    LinkProject: "https://pokepage-henna.vercel.app/pokedex",
-    icons: IconsPokepage,
+    Project: {
+      title: "Pokepage",
+      paragraph:
+        "Pokedex de Pokémon, desarrollado con TypeScript y Vite. Esta aplicación web ofrece una experiencia interactiva y rápida para explorar una amplia variedad de Pokémon.",
+      date: "2023-01-31",
+      src: "/pokepage.png",
+      alt: "Pokepage photo",
+      LinkGithub: "https://github.com/LilNait-S/pokepage",
+      LinkProject: "https://pokepage-henna.vercel.app/pokedex",
+      icons: [
+        {
+          title: "TypeScript",
+          icon: <IconTypeScript width="20" height="20" />,
+        },
+        { title: "Figma", icon: <IconFigma width="20" height="20" /> },
+        { title: "React", icon: <IconReact width="20" height="20" /> },
+        { title: "Tailwind", icon: <IconTailwind width="20" height="20" /> },
+      ],
+    },
   },
   {
-    title: "Yariga",
-    paragraph:
-      "Dashboard creada para ofrecer inmuebles en venta, alquiler, etc. Cuenta con charts y Auth con google.",
-    date: "2023-03-02",
-    src: "/yariga.png",
-    alt: "Yariga photo",
-    LinkGithub: "https://github.com/LilNait-S/refine_dashboard",
-    LinkProject: "https://yariga-dashboard-refine-lilnait.vercel.app/",
-    icons: IconsYariga,
+    Project: {
+      title: "Yariga",
+      paragraph:
+        "Dashboard creada para ofrecer inmuebles en venta, alquiler, etc. Cuenta con charts y Auth con google.",
+      date: "2023-03-02",
+      src: "/yariga.png",
+      alt: "Yariga photo",
+      LinkGithub: "https://github.com/LilNait-S/refine_dashboard",
+      LinkProject: "https://yariga-dashboard-refine-lilnait.vercel.app/",
+      icons: [
+        {
+          title: "TypeScript",
+          icon: <IconTypeScript width="20" height="20" />,
+        },
+        { title: "React", icon: <IconReact width="20" height="20" /> },
+      ],
+    },
   },
   {
-    title: "To do List",
-    paragraph: "Aplicación para anotar cosas.",
-    date: "2023-02-06",
-    src: "/to-do-list.png",
-    alt: "To do List photo",
-    LinkGithub: "https://github.com/LilNait-S/to-do-list",
-    LinkProject: "https://to-do-list-six-mu.vercel.app/",
-    icons: IconsToDoList,
+    Project: {
+      title: "To do List",
+      paragraph: "Aplicación para anotar cosas.",
+      date: "2023-02-06",
+      src: "/to-do-list.png",
+      alt: "To do List photo",
+      LinkGithub: "https://github.com/LilNait-S/to-do-list",
+      LinkProject: "https://to-do-list-six-mu.vercel.app/",
+      icons: [
+        {
+          title: "TypeScript",
+          icon: <IconTypeScript width="20" height="20" />,
+        },
+        { title: "Tailwind", icon: <IconTailwind width="20" height="20" /> },
+        { title: "React", icon: <IconReact width="20" height="20" /> },
+      ],
+    },
   },
   {
-    title: "Weather App",
-    paragraph: "Aplicación para ver el clima por ciudades, con buscador.",
-    date: "2023-03-13",
-    src: "/weatherApp.png",
-    alt: "Weather app photo",
-    LinkGithub: "https://github.com/LilNait-S/to-do-list",
-    LinkProject: "https://weather-app-rosy-kappa.vercel.app/",
-    icons: IconsWeather,
+    Project: {
+      title: "Weather App",
+      paragraph: "Aplicación para ver el clima por ciudades, con buscador.",
+      date: "2023-03-13",
+      src: "/weatherApp.png",
+      alt: "Weather app photo",
+      LinkGithub: "https://github.com/LilNait-S/to-do-list",
+      LinkProject: "https://weather-app-rosy-kappa.vercel.app/",
+      icons: [
+        { title: "Figma", icon: <IconFigma width="20" height="20" /> },
+        {
+          title: "JavaScript",
+          icon: <IconJavascript width="20" height="20" />,
+        },
+        { title: "React", icon: <IconReact width="20" height="20" /> },
+        { title: "Tailwind", icon: <IconTailwind width="20" height="20" /> },
+      ],
+    },
   },
 ];
 

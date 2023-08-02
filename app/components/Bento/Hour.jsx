@@ -8,7 +8,7 @@ const Hour = () => {
   });
 
   return (
-    <span className="text-3xl font-bold uppercase justify-center items-center h-full hidden lg:flex">
+    <span className="text-3xl flex font-bold uppercase justify-center items-center h-full">
       {formatedHours}
     </span>
   );

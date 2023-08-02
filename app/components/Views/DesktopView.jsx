@@ -1,8 +1,8 @@
-import Aboutme from "../Aboutme";
-import Tec from "../Tec";
-import LargeDate from "../LargeDate";
-import Hour from "../Hour";
-import Twitter from "../Twitter";
+import Aboutme from "../Bento/Aboutme";
+import Tec from "../Bento/Tec";
+import LargeDate from "../Bento/LargeDate";
+import Hour from "../Bento/Hour";
+import Twitter from "../Bento/Twitter";
 
 const DesktopView = () => {
   return (

@@ -1,10 +1,10 @@
-const IconCard = ({ title, src, alt }) => {
+const IconCard = ({ title, icon }) => {
   return (
-    <div className="flex gap-2 items-center justify-center">
-      <figure className="relative flex aspect-square w-full max-w-[15px]">
-        <img src={src} alt={alt} className="w-full h-full object-center" />
-      </figure>
-      <span>{title}</span>
+    <div className="flex gap-2 items-center justify-center text-sm">
+      <div className="w-full h-full flex justify-center items-center">
+        {icon}
+      </div>
+      <span className="whitespace-nowrap">{title}</span>
     </div>
   );
 };

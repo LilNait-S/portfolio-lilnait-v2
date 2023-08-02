@@ -12,8 +12,9 @@ const PracticeCard = ({
   paragraph,
   iconsTec,
 }) => {
+  
   return (
-    <section className="relative h-[280px] w-[600px] flex justify-start gap-6 p-8 rounded-xl ">
+    <section className="relative h-[300px] w-[570px] flex justify-start gap-6 p-8 rounded-xl ">
       <figure className="relative flex aspect-square">
         <img
           src={src}
@@ -22,8 +23,8 @@ const PracticeCard = ({
         />
       </figure>
 
-      <div className="flex flex-col h-full py-2 justify-between">
-        <div>
+      <div className="flex flex-col h-full ">
+        <div className="h-[70%]">
           <header className="flex justify-between">
             <h2 className="text-2xl font-semibold tracking-tight">{title}</h2>
             <div className="flex items-center">
@@ -41,9 +42,9 @@ const PracticeCard = ({
             <p className="line-clamp-4">{paragraph}</p>
           </main>
         </div>
-        <footer className="flex gap-x-4 gap-y-1 flex-wrap">
-          {iconsTec.map(({ title, img, alt }) => (
-            <IconCard key={title} title={title} src={img} alt={alt} />
+        <footer className="flex gap-x-4 gap-y-1 flex-wrap mt-2">
+          {iconsTec.map(({ title, icon }) => (
+            <IconCard key={title} title={title} icon={icon} />
           ))}
         </footer>
       </div>

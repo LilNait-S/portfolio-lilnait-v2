@@ -1,6 +1,6 @@
 "use client";
 
-import { IconsPromptopia, practices, tagsPractice } from "@/constant";
+import { Practices, tagsPractice } from "@/constant";
 import FilterByTagCopy from "../FilterByTagCopy";
 import { useState } from "react";
 import PracticeCard from "../PracticeCard";
@@ -22,17 +22,19 @@ const Practice = () => {
           handleChange={handleFilterTag}
         />
       </header>
-      <div className="flex flex-wrap">
-        {practices.map(
+      <div className="grid grid-cols-2 auto-rows-[300px] place-items-center">
+        {Practices.map(
           ({
-            title,
-            paragraph,
-            date,
-            src,
-            alt,
-            LinkGithub,
-            LinkProject,
-            icons,
+            Project: {
+              title,
+              paragraph,
+              date,
+              src,
+              alt,
+              LinkGithub,
+              LinkProject,
+              icons,
+            },
           }) => (
             <PracticeCard
               key={title}

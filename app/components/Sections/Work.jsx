@@ -3,6 +3,9 @@ import IconCard from "../IconCard";
 import FilterByTag from "../FilterByTag";
 import { GoDotFill } from "react-icons/go";
 import { BiLink } from "react-icons/bi";
+import { IconFigma, IconNextjs } from "../Icons/Tecnologys";
+import { IconSanity, IconVercel } from "../Icons/Tags";
+
 
 const Work = () => {
   return (
@@ -126,18 +129,27 @@ const Work = () => {
                   </div>
                   <footer className="flex gap-x-4 gap-y-1 flex-wrap">
                     <IconCard
+                      title="Figma"
+                      src="/nextjs.svg"
+                      icon={<IconFigma width="20" height="20" />}
+                      alt="Next js logo"
+                    />
+                    <IconCard
                       title="Next js"
                       src="/nextjs.svg"
+                      icon={<IconNextjs />}
                       alt="Next js logo"
                     />
                     <IconCard
                       title="Sanity"
                       src="/sanity.svg"
+                      icon={<IconSanity />}
                       alt="sanity logo"
                     />
                     <IconCard
                       title="Vercel"
                       src="/vercel.svg"
+                      icon={<IconVercel />}
                       alt="vercel logo"
                     />
                   </footer>
