@@ -20,5 +20,5 @@ body {
 
 /* Tailwind Styles */
 .purple_gradient {
-  @apply bg-gradient-to-r from-fuchsia-600 via-purple-600 to-purple-600 bg-clip-text text-transparent;
+  @apply bg-gradient-to-r from-[#e428fd] via-[#c532ff] to-[#9022FF] bg-clip-text text-transparent;
 }

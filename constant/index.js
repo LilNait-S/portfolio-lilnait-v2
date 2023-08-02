@@ -50,3 +50,57 @@ export const tecnologys = [
     alt: "TypeScript logo",
   },
 ];
+
+export const IconsPromptopia = [
+  {
+    title: "Next js",
+    img: "/nextjs.svg",
+    alt: "Next js logo",
+  },
+  {
+    title: "MongoDB",
+    img: "/mongodb.svg",
+    alt: "MongoDB logo",
+  },
+  {
+    title: "Vercel",
+    img: "/vercel.svg",
+    alt: "vercel logo",
+  },
+];
+
+export const tagsWork = [
+  {
+    title: "Todo",
+    value: "All Projects",
+    name: "Tag Work Filter",
+  },
+  {
+    title: "Independiente",
+    value: "Freelance",
+    name: "Tag Work Filter",
+  },
+  {
+    title: "Empresas",
+    value: "Business",
+    name: "Tag Work Filter",
+  },
+];
+
+export const tagsPractice = [
+  {
+    title: "Todo",
+    value: "All Projects",
+    name: "Tag Practice Filter",
+  },
+  {
+    title: "Practica",
+    value: "Practice",
+    name: "Tag Practice Filter",
+  },
+  {
+    title: "Pruebas técnicas",
+    value: "Technical tests",
+    name: "Tag Practice Filter",
+  },
+];

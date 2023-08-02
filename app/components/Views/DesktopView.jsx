@@ -1,11 +1,8 @@
-import React from "react";
-import Aboutme from "./Aboutme";
-import TecMovile from "./TecMovile";
-import HourMovile from "./HourMovile";
-import Tec from "./Tec";
-import LargeDate from "./LargeDate";
-import Hour from "./Hour";
-import Twitter from "./Twitter";
+import Aboutme from "../Aboutme";
+import Tec from "../Tec";
+import LargeDate from "../LargeDate";
+import Hour from "../Hour";
+import Twitter from "../Twitter";
 
 const DesktopView = () => {
   return (
