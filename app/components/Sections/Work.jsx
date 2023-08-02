@@ -1,15 +1,15 @@
-import { AiFillEye, AiFillGithub } from "react-icons/ai";
 import Link from "next/link";
 import IconCard from "../IconCard";
 import FilterByTag from "../FilterByTag";
 import { GoDotFill } from "react-icons/go";
+import { BiLink } from "react-icons/bi";
 
 const Work = () => {
   return (
     <section className="flex flex-col mt-10 bg-[#0D0D0E] p-12 rounded-xl gap-5">
       <header className="flex flex-col gap-3">
         <h2 className="text-2xl font-semibold">Revisa mi trabajo</h2>
-        <FilterByTag />
+        {/* <FilterByTag /> */}
       </header>
       <div className="relative">
         <main className="flex flex-col">
@@ -20,7 +20,7 @@ const Work = () => {
               </span>
             </section>
             <div className="relative border-l-4 pl-4 border-gray-600">
-              <GoDotFill className="absolute text-purple-600 left-[-16px] top-[-17px] min-h-[30px] min-w-[30px]" />
+              <GoDotFill className="absolute text-purple-600 left-[-17px] top-[-17px] min-h-[30px] min-w-[30px]" />
               <section className="relative h-[280px] w-full flex justify-start gap-6 p-8 rounded-xl">
                 <figure className="relative flex aspect-square">
                   <img
@@ -106,7 +106,7 @@ const Work = () => {
                           className="p-2"
                           target="_blank"
                         >
-                          <AiFillEye className="text-[#c532ff] min-h-[20px] min-w-[20px]" />
+                          <BiLink className="text-[#c532ff] min-h-[25px] min-w-[25px]" />
                         </Link>
                         {/* <Link href="/" className="p-2">
                           <AiFillGithub className="text-[#c532ff] min-h-[20px] min-w-[20px]" />

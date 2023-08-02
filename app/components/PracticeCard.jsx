@@ -1,6 +1,7 @@
 import { AiFillEye, AiFillGithub } from "react-icons/ai";
 import IconCard from "./IconCard";
 import Link from "next/link";
+import { BiLink } from "react-icons/bi";
 
 const PracticeCard = ({
   title,
@@ -12,12 +13,12 @@ const PracticeCard = ({
   iconsTec,
 }) => {
   return (
-    <section className="relative h-[280px] w-[600px] flex justify-start gap-6  p-8 rounded-xl ">
-      <figure className="relative flex aspect-square w-full">
+    <section className="relative h-[280px] w-[600px] flex justify-start gap-6 p-8 rounded-xl ">
+      <figure className="relative flex aspect-square">
         <img
           src={src}
           alt={alt}
-          className="rounded-lg object-cover object-center"
+          className="rounded-lg aspect-square object-cover object-center"
         />
       </figure>
 
@@ -27,7 +28,7 @@ const PracticeCard = ({
             <h2 className="text-2xl font-semibold tracking-tight">{title}</h2>
             <div className="flex items-center">
               <Link href={LinkGithub} className="p-2">
-                <AiFillEye className="text-[#c532ff] min-h-[20px] min-w-[20px]" />
+                <BiLink className="text-[#c532ff] min-h-[20px] min-w-[20px]" />
               </Link>
               {LinkProject && (
                 <Link href={LinkProject} className="p-2">

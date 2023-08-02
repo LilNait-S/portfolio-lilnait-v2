@@ -5,7 +5,7 @@ import MovileView from "./components/Views/MovileView";
 
 export default function Home() {
   return (
-    <div className="py-16 max-w-[1180px] mx-auto">
+    <div className="py-16 max-w-[1300px] mx-auto">
       <DesktopView />
       <MovileView />
 

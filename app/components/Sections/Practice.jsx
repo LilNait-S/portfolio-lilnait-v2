@@ -1,6 +1,6 @@
 "use client";
 
-import { IconsPromptopia, tagsPractice } from "@/constant";
+import { IconsPromptopia, practices, tagsPractice } from "@/constant";
 import FilterByTagCopy from "../FilterByTagCopy";
 import { useState } from "react";
 import PracticeCard from "../PracticeCard";
@@ -22,16 +22,31 @@ const Practice = () => {
           handleChange={handleFilterTag}
         />
       </header>
-
-      <PracticeCard
-        title="Promptopia"
-        src="/promptopia.png"
-        alt="Promptopia logo"
-        LinkGithub="/"
-        LinkProject="/"
-        paragraph="Sitio donde puedes compartir tus mejores prompt con la comunidad, puedes registrarte con tu gmail, crea, edita o comparte tus prompt."
-        iconsTec={IconsPromptopia}
-      />
+      <div className="flex flex-wrap">
+        {practices.map(
+          ({
+            title,
+            paragraph,
+            date,
+            src,
+            alt,
+            LinkGithub,
+            LinkProject,
+            icons,
+          }) => (
+            <PracticeCard
+              key={title}
+              title={title}
+              src={src}
+              alt={alt}
+              LinkGithub={LinkGithub}
+              LinkProject={LinkProject}
+              paragraph={paragraph}
+              iconsTec={icons}
+            />
+          )
+        )}
+      </div>
     </section>
   );
 };
