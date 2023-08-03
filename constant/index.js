@@ -1,4 +1,4 @@
-import { IconSanity, IconVercel } from "@/app/components/Icons/Tags";
+import { IconSanity, IconVercel } from "@/components/Icons/Tags";
 import {
   IconFigma,
   IconGraphQL,
@@ -10,7 +10,7 @@ import {
   IconSupabase,
   IconTailwind,
   IconTypeScript,
-} from "@/app/components/Icons/Tecnologys";
+} from "@/components/Icons/Tecnologys";
 
 export const tecnologys = [
   {

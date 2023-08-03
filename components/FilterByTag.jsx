@@ -1,5 +1,3 @@
-"use client";
-
 import InputRadio from "./FormComponents/InputRadio";
 
 const FilterByTag = ({ tags, checked, handleChange }) => {
