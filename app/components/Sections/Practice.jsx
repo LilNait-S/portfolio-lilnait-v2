@@ -1,26 +1,24 @@
-"use client";
-
 import { Practices, tagsPractice } from "@/constant";
 import FilterByTagCopy from "../FilterByTag";
 import { useState } from "react";
 import PracticeCard from "../PracticeCard";
 
 const Practice = () => {
-  const [tag, setTag] = useState("All Projects");
+  // const [tag, setTag] = useState("All Projects");
 
-  const handleFilterTag = (e) => {
-    setTag(e.target.value);
-  };
+  // const handleFilterTag = (e) => {
+  //   setTag(e.target.value);
+  // };
 
   return (
     <section className="flex flex-col mt-10 bg-[#0D0D0E] p-12 rounded-xl gap-5">
       <header className="flex flex-col gap-3">
         <h2 className="text-2xl font-semibold">Practicas personales</h2>
-        <FilterByTagCopy
+        {/* <FilterByTagCopy
           tags={tagsPractice}
           checked={tag}
           handleChange={handleFilterTag}
-        />
+        /> */}
       </header>
       <div className="grid grid-cols-2 auto-rows-[300px] place-items-center">
         {Practices.map(

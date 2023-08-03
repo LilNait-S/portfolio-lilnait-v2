@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 const InputRadio = ({ title, value, name, checked, handleChange }) => {
   return (
