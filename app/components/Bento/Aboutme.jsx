@@ -22,13 +22,13 @@ const Aboutme = () => {
           </p>
         </div>
         <div className="flex-col lg:flex-row justify-end hidden lg:flex">
-          <Link href="/" className="hover:border-b-4 border-purple-600">
+          {/* <Link href="/" className="hover:border-b-4 border-purple-600">
             <HiMail className="h-12 w-12 p-2" />
-          </Link>
-          <Link href="/" className="hover:border-b-4 border-purple-600">
+          </Link> */}
+          <Link href="https://www.linkedin.com/in/sergio-delgado-arenas/" target="_blank" className="hover:border-b-4 border-purple-600">
             <BsLinkedin className="h-12 w-12 p-3" />
           </Link>
-          <Link href="/" className="hover:border-b-4 border-purple-600">
+          <Link href="https://github.com/LilNait-S" target="_blank" className="hover:border-b-4 border-purple-600">
             <AiFillGithub className="h-12 w-12 p-2" />
           </Link>
         </div>
@@ -36,24 +36,24 @@ const Aboutme = () => {
 
       <div className="flex justify-center gap-10 lg:hidden">
         <div className="flex flex-col lg:flex-row justify-end bottom-0">
-          <Link href="/" className="hover:border-b-4 border-purple-600">
+          {/* <Link href="/" className="hover:border-b-4 border-purple-600">
             <HiMail className="h-12 w-12 p-2" />
-          </Link>
-          <Link href="/" className="hover:border-b-4 border-purple-600">
+          </Link> */}
+          <Link href="https://www.linkedin.com/in/sergio-delgado-arenas/" target="_blank" className="hover:border-b-4 border-purple-600">
             <BsLinkedin className="h-12 w-12 p-3" />
           </Link>
-          <Link href="/" className="hover:border-b-4 border-purple-600">
+          <Link href="https://github.com/LilNait-S" target="_blank" className="hover:border-b-4 border-purple-600">
             <AiFillGithub className="h-12 w-12 p-2" />
           </Link>
         </div>
         <img
-          src="/myphoto.png"
+          src="/myphoto.webp"
           className="object-contain h-full w-full max-w-[90px] max-h-40 lg:max-h-72 rounded-md"
         />
       </div>
 
       <img
-        src="/myphoto.png"
+        src="/myphoto.webp"
         className="object-cover h-full w-full max-w-[164px] rounded-md hidden lg:block"
       />
     </div>

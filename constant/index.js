@@ -64,7 +64,7 @@ export const Works = [
       paragraph:
         "Desarrollé un dashboard que ha permitido potenciar el desarrollo y la efectividad de la IA, brindando a los usuarios un entorno completo para interactuar con ella, entrenarla y optimizar su rendimiento.",
       date: "2023-03-20",
-      src: "/dashboardIA.png",
+      src: "/dashboardIA.webp",
       alt: "Landing page dashboardIA",
       linkGithub: null,
       linkProject: null,
@@ -80,7 +80,7 @@ export const Works = [
       paragraph:
         "Desarrollé un ecommerce de peluches. Incluye filtros portamaño, buscador, carrito de compras y cotizador.También se destaca por ofertas especiales, envíosrápidos y atención al cliente dedicada. El proyecto busca brindar una experiencia de compra emocionante y satisfactoria.",
       date: "2023-01-30",
-      src: "/.png",
+      src: "/.webp",
       alt: "Landing page Aini28",
       linkGithub: null,
       linkProject: "https://aini28.com/",
@@ -104,7 +104,7 @@ export const Practices = [
         "Sitio donde puedes compartir tus mejores prompt con la comunidad, puedes registrarte con tu gmail, crea, edita o comparte tus prompt.",
       date: "2023-06-28", // Formato: "YYYY-MM-DD"
       // date: new Date(2023, 0, 1),
-      src: "/promptopia.png",
+      src: "/promptopia.webp",
       alt: "Promptopia photo",
       LinkGithub: "https://github.com/LilNait-S/promptopia",
       LinkProject: "https://promptopia-hw6vooo66-lilnait-s.vercel.app/",
@@ -121,7 +121,7 @@ export const Practices = [
       paragraph:
         "Pokedex de Pokémon, desarrollado con TypeScript y Vite. Esta aplicación web ofrece una experiencia interactiva y rápida para explorar una amplia variedad de Pokémon.",
       date: "2023-01-31",
-      src: "/pokepage.png",
+      src: "/pokepage.webp",
       alt: "Pokepage photo",
       LinkGithub: "https://github.com/LilNait-S/pokepage",
       LinkProject: "https://pokepage-henna.vercel.app/pokedex",
@@ -142,7 +142,7 @@ export const Practices = [
       paragraph:
         "Dashboard creada para ofrecer inmuebles en venta, alquiler, etc. Cuenta con charts y Auth con google.",
       date: "2023-03-02",
-      src: "/yariga.png",
+      src: "/yariga.webp",
       alt: "Yariga photo",
       LinkGithub: "https://github.com/LilNait-S/refine_dashboard",
       LinkProject: "https://yariga-dashboard-refine-lilnait.vercel.app/",
@@ -160,7 +160,7 @@ export const Practices = [
       title: "To do List",
       paragraph: "Aplicación para anotar cosas.",
       date: "2023-02-06",
-      src: "/todolist.png",
+      src: "/todolist.webp",
       alt: "To do List photo",
       LinkGithub: "https://github.com/LilNait-S/to-do-list",
       LinkProject: "https://to-do-list-six-mu.vercel.app/",
@@ -179,7 +179,7 @@ export const Practices = [
       title: "Weather App",
       paragraph: "Aplicación para ver el clima por ciudades, con buscador.",
       date: "2023-03-13",
-      src: "/weatherApp.png",
+      src: "/weatherApp.webp",
       alt: "Weather app photo",
       LinkGithub: "https://github.com/LilNait-S/to-do-list",
       LinkProject: "https://weather-app-rosy-kappa.vercel.app/",

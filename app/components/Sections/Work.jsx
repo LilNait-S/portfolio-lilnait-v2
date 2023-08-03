@@ -1,11 +1,9 @@
 import Link from "next/link";
 import IconCard from "../IconCard";
-import FilterByTag from "../FilterByTag";
 import { GoDotFill } from "react-icons/go";
 import { BiLink } from "react-icons/bi";
-import { IconFigma, IconNextjs } from "../Icons/Tecnologys";
+import { IconFigma, IconNextjs, IconSupabase } from "../Icons/Tecnologys";
 import { IconSanity, IconVercel } from "../Icons/Tags";
-
 
 const Work = () => {
   return (
@@ -27,7 +25,7 @@ const Work = () => {
               <section className="relative h-[280px] w-full flex justify-start gap-6 p-8 rounded-xl">
                 <figure className="relative flex aspect-square">
                   <img
-                    src="/dashboardIA.png"
+                    src="/dashboardIA.webp"
                     alt="Seometric photo"
                     className="rounded-lg object-cover aspect-square object-center"
                   />
@@ -58,21 +56,21 @@ const Work = () => {
                     </main>
                   </div>
                   <footer className="flex gap-x-4 gap-y-1 flex-wrap">
-                    <IconCard title="Figma" src="/figma.svg" alt="Figma logo" />
+                    <IconCard
+                      title="Figma"
+                      icon={<IconFigma width="20" height="20" />}
+                    />
                     <IconCard
                       title="Next js"
-                      src="/nextjs.svg"
-                      alt="Next js logo"
+                      icon={<IconNextjs width="20" height="20" />}
                     />
                     <IconCard
                       title="Supabase"
-                      src="/supabase.svg"
-                      alt="Supabase logo"
+                      icon={<IconSupabase width="20" height="20" />}
                     />
                     <IconCard
                       title="Vercel"
-                      src="/vercel.svg"
-                      alt="vercel logo"
+                      icon={<IconVercel width="20" height="20" />}
                     />
                   </footer>
                 </div>
@@ -91,7 +89,7 @@ const Work = () => {
               <section className="relative h-[280px] w-full flex justify-start gap-6 p-8 rounded-xl">
                 <figure className="relative flex aspect-square">
                   <img
-                    src="/aini.png"
+                    src="/aini.webp"
                     alt="Aini28 logo"
                     className="rounded-lg object-cover aspect-square object-center"
                   />
@@ -130,27 +128,19 @@ const Work = () => {
                   <footer className="flex gap-x-4 gap-y-1 flex-wrap">
                     <IconCard
                       title="Figma"
-                      src="/nextjs.svg"
                       icon={<IconFigma width="20" height="20" />}
-                      alt="Next js logo"
                     />
                     <IconCard
                       title="Next js"
-                      src="/nextjs.svg"
-                      icon={<IconNextjs />}
-                      alt="Next js logo"
+                      icon={<IconNextjs width="20" height="20" />}
                     />
                     <IconCard
                       title="Sanity"
-                      src="/sanity.svg"
-                      icon={<IconSanity />}
-                      alt="sanity logo"
+                      icon={<IconSanity width="20" height="20" />}
                     />
                     <IconCard
                       title="Vercel"
-                      src="/vercel.svg"
-                      icon={<IconVercel />}
-                      alt="vercel logo"
+                      icon={<IconVercel width="20" height="20" />}
                     />
                   </footer>
                 </div>

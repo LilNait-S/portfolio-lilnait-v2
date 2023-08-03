@@ -3,6 +3,8 @@ import Tec from "../Bento/Tec";
 import LargeDate from "../Bento/LargeDate";
 import Hour from "../Bento/Hour";
 import Twitter from "../Bento/Twitter";
+import Country from "../Bento/Country";
+import Knowledge from "../Bento/Knowledge";
 
 const DesktopView = () => {
   return (
@@ -36,32 +38,14 @@ const DesktopView = () => {
            `}
         >
           {i === 0 && <Aboutme />}
-          {i === 1 && (
-            <div className="relative flex justify-center items-center h-full ">
-              <h2 className="relative text-2xl lg:text-4xl font-bold purple_gradient">
-                Perú
-              </h2>
-              <img
-                src="/peru.svg"
-                className="absolute top-3 right-12 lg:top-6 h-[20px] w-[20px]"
-              />
-            </div>
-          )}
+          {i === 1 && <Country />}
           {i === 2 && (
             <img
-              src="/china.png"
+              src="/china.webp"
               className="object-cover h-full w-full rounded-xl hidden lg:block"
             />
           )}
-          {i === 3 && (
-            <div className="flex-col justify-center items-center h-full gap-3 hidden lg:flex">
-              <h2 className="text-xl purple_gradient font-bold">
-                Desarrollador web
-              </h2>
-              <h2 className="text-xl purple_gradient font-bold">UX/UI</h2>
-              <h2 className="text-xl purple_gradient font-bold">Frontend</h2>
-            </div>
-          )}
+          {i === 3 && <Knowledge />}
           {i === 4 && <Tec />}
           {i === 5 && (
             <img

@@ -12,7 +12,6 @@ const PracticeCard = ({
   paragraph,
   iconsTec,
 }) => {
-  
   return (
     <section className="relative h-[300px] w-[570px] flex justify-start gap-6 p-8 rounded-xl ">
       <figure className="relative flex aspect-square">
@@ -28,11 +27,13 @@ const PracticeCard = ({
           <header className="flex justify-between">
             <h2 className="text-2xl font-semibold tracking-tight">{title}</h2>
             <div className="flex items-center">
-              <Link href={LinkGithub} className="p-2">
-                <BiLink className="text-[#c532ff] min-h-[20px] min-w-[20px]" />
-              </Link>
+              {LinkGithub && (
+                <Link href={LinkGithub} className="p-2" target="_blank">
+                  <BiLink className="text-[#c532ff] min-h-[20px] min-w-[20px]" />
+                </Link>
+              )}
               {LinkProject && (
-                <Link href={LinkProject} className="p-2">
+                <Link href={LinkProject} className="p-2" target="_blank">
                   <AiFillGithub className="text-[#c532ff] min-h-[20px] min-w-[20px]" />
                 </Link>
               )}
