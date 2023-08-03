@@ -18,7 +18,7 @@ const PracticeCard = ({
         <img
           src={src}
           alt={alt}
-          className="rounded-lg aspect-square object-cover object-center"
+          className="rounded-lg h-auto w-auto aspect-square object-cover object-center"
         />
       </figure>
 
@@ -27,13 +27,15 @@ const PracticeCard = ({
           <header className="flex justify-between">
             <h2 className="text-2xl font-semibold tracking-tight">{title}</h2>
             <div className="flex items-center">
-              {LinkGithub && (
-                <Link href={LinkGithub} className="p-2" target="_blank">
+              {LinkProject && (
+                <Link href={LinkProject} className="p-2" target="_blank">
+                  <span className="sr-only">Link to Project</span>
                   <BiLink className="text-[#c532ff] min-h-[20px] min-w-[20px]" />
                 </Link>
               )}
-              {LinkProject && (
-                <Link href={LinkProject} className="p-2" target="_blank">
+              {LinkGithub && (
+                <Link href={LinkGithub} className="p-2" target="_blank">
+                  <span className="sr-only">Link to Github repository</span>
                   <AiFillGithub className="text-[#c532ff] min-h-[20px] min-w-[20px]" />
                 </Link>
               )}

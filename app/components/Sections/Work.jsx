@@ -27,7 +27,7 @@ const Work = () => {
                   <img
                     src="/dashboardIA.webp"
                     alt="Seometric photo"
-                    className="rounded-lg object-cover aspect-square object-center"
+                    className="rounded-lg h-auto w-auto object-cover aspect-square object-center"
                   />
                 </figure>
 
@@ -39,9 +39,11 @@ const Work = () => {
                       </h2>
                       <div className="flex items-center">
                         {/* <Link href="/" className="p-2">
+                        <span className="sr-only">Link to Project</span>
                           <AiFillEye className="text-[#c532ff] min-h-[20px] min-w-[20px]" />
                         </Link>
                         <Link href="/" className="p-2">
+                        <span className="sr-only">Link to Github repository</span>
                           <AiFillGithub className="text-[#c532ff] min-h-[20px] min-w-[20px]" />
                         </Link> */}
                       </div>
@@ -90,8 +92,8 @@ const Work = () => {
                 <figure className="relative flex aspect-square">
                   <img
                     src="/aini.webp"
-                    alt="Aini28 logo"
-                    className="rounded-lg object-cover aspect-square object-center"
+                    alt="Aini28 landing page"
+                    className="rounded-lg h-auto w-auto object-cover aspect-square object-center"
                   />
                 </figure>
 
@@ -107,9 +109,11 @@ const Work = () => {
                           className="p-2"
                           target="_blank"
                         >
+                          <span className="sr-only">Link to Project</span>
                           <BiLink className="text-[#c532ff] min-h-[25px] min-w-[25px]" />
                         </Link>
                         {/* <Link href="/" className="p-2">
+                        <span className="sr-only">Link to Github repository</span>
                           <AiFillGithub className="text-[#c532ff] min-h-[20px] min-w-[20px]" />
                         </Link> */}
                       </div>

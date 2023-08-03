@@ -7,7 +7,7 @@ const FilterByTagCopy = ({ tags, checked, handleChange }) => {
   return (
     <div className="relative -mx-4 overflow-x-auto px-4 pb-2">
       <fieldset className="flex gap-3">
-        <legend className="hidden">Filter by Tag</legend>
+        <legend className="sr-only">Filter by Tag</legend>
         {tags.map(({ title, value, named }) => (
           <InputRadio
           key={title}

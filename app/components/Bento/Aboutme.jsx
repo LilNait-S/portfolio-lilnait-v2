@@ -25,10 +25,20 @@ const Aboutme = () => {
           {/* <Link href="/" className="hover:border-b-4 border-purple-600">
             <HiMail className="h-12 w-12 p-2" />
           </Link> */}
-          <Link href="https://www.linkedin.com/in/sergio-delgado-arenas/" target="_blank" className="hover:border-b-4 border-purple-600">
+          <Link
+            href="https://www.linkedin.com/in/sergio-delgado-arenas/"
+            target="_blank"
+            className="hover:border-b-4 border-purple-600"
+          >
+            <span className="sr-only">Link to My profile Linkedin</span>
             <BsLinkedin className="h-12 w-12 p-3" />
           </Link>
-          <Link href="https://github.com/LilNait-S" target="_blank" className="hover:border-b-4 border-purple-600">
+          <Link
+            href="https://github.com/LilNait-S"
+            target="_blank"
+            className="hover:border-b-4 border-purple-600"
+          >
+            <span className="sr-only">Link to My profile Github</span>
             <AiFillGithub className="h-12 w-12 p-2" />
           </Link>
         </div>
@@ -39,22 +49,34 @@ const Aboutme = () => {
           {/* <Link href="/" className="hover:border-b-4 border-purple-600">
             <HiMail className="h-12 w-12 p-2" />
           </Link> */}
-          <Link href="https://www.linkedin.com/in/sergio-delgado-arenas/" target="_blank" className="hover:border-b-4 border-purple-600">
+          <Link
+            href="https://www.linkedin.com/in/sergio-delgado-arenas/"
+            target="_blank"
+            className="hover:border-b-4 border-purple-600"
+          >
+            <span className="sr-only">Link to My profile Linkedin</span>
             <BsLinkedin className="h-12 w-12 p-3" />
           </Link>
-          <Link href="https://github.com/LilNait-S" target="_blank" className="hover:border-b-4 border-purple-600">
+          <Link
+            href="https://github.com/LilNait-S"
+            target="_blank"
+            className="hover:border-b-4 border-purple-600"
+          >
+            <span className="sr-only">Link to My profile Github</span>
             <AiFillGithub className="h-12 w-12 p-2" />
           </Link>
         </div>
         <img
           src="/myphoto.webp"
           className="object-contain h-full w-full max-w-[90px] max-h-40 lg:max-h-72 rounded-md"
+          alt="Photo profile"
         />
       </div>
 
       <img
         src="/myphoto.webp"
         className="object-cover h-full w-full max-w-[164px] rounded-md hidden lg:block"
+        alt="Photo profile"
       />
     </div>
   );
