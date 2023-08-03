@@ -1,3 +1,5 @@
+'use client'
+
 const InputRadio = ({ title, value, name, checked, handleChange }) => {
   return (
     <label className="flex">
