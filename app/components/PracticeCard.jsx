@@ -18,7 +18,9 @@ const PracticeCard = ({
         <img
           src={src}
           alt={alt}
-          className="rounded-lg h-auto w-auto aspect-square object-cover object-center"
+          width={210}
+          height={210}
+          className="rounded-lg w-auto h-auto aspect-square object-cover object-center"
         />
       </figure>
 

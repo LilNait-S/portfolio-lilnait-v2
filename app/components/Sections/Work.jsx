@@ -27,6 +27,8 @@ const Work = () => {
                   <img
                     src="/dashboardIA.webp"
                     alt="Seometric photo"
+                    width={210}
+                    height={210}
                     className="rounded-lg h-auto w-auto object-cover aspect-square object-center"
                   />
                 </figure>
@@ -93,6 +95,8 @@ const Work = () => {
                   <img
                     src="/aini.webp"
                     alt="Aini28 landing page"
+                    width={210}
+                    height={210}
                     className="rounded-lg h-auto w-auto object-cover aspect-square object-center"
                   />
                 </figure>
