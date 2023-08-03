@@ -1,39 +1,20 @@
-"use client";
-
-import { useState } from "react";
 import InputRadio from "./FormComponents/InputRadio";
 
-const FilterByTag = () => {
-  const [Tag, setTag] = useState("All Projects");
-
-  const handleFilterTag = (e) => {
-    setTag(e.target.value);
-  };
+const FilterByTag = ({ tags, checked, handleChange }) => {
   return (
     <div className="relative -mx-4 overflow-x-auto px-4 pb-2">
       <fieldset className="flex gap-3">
-        <legend className="hidden">Filter by Tag</legend>
-        <InputRadio
-          title="Todos"
-          value="All Projects"
-          name="Tag Filter"
-          checked={Tag}
-          handleChange={handleFilterTag}
-        />
-        <InputRadio
-          title="Independiente"
-          value="Freelance"
-          name="Tag Filter"
-          checked={Tag}
-          handleChange={handleFilterTag}
-        />
-        <InputRadio
-          title="Empresas"
-          value="Business"
-          name="Tag Filter"
-          checked={Tag}
-          handleChange={handleFilterTag}
-        />
+        <legend className="sr-only">Filter by Tag</legend>
+        {tags.map(({ title, value, named }) => (
+          <InputRadio
+            key={title}
+            title={title}
+            value={value}
+            name={named}
+            checked={checked}
+            handleChange={handleChange}
+          />
+        ))}
       </fieldset>
     </div>
   );

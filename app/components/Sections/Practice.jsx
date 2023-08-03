@@ -1,12 +1,12 @@
 "use client";
 
 import { Practices, tagsPractice } from "@/constant";
-import FilterByTagCopy from "../FilterByTagCopy";
+import FilterByTagCopy from "../FilterByTag";
 import { useState } from "react";
 import PracticeCard from "../PracticeCard";
 
 const Practice = () => {
-  const [Tag, setTag] = useState("All Projects");
+  const [tag, setTag] = useState("All Projects");
 
   const handleFilterTag = (e) => {
     setTag(e.target.value);
@@ -18,7 +18,7 @@ const Practice = () => {
         <h2 className="text-2xl font-semibold">Practicas personales</h2>
         <FilterByTagCopy
           tags={tagsPractice}
-          checked={Tag}
+          checked={tag}
           handleChange={handleFilterTag}
         />
       </header>
