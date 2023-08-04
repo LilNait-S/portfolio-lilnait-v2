@@ -15,7 +15,7 @@ const PracticeCard = ({
 }) => {
   return (
     <section className="relative h-[600px] w-[300px] sm:w-full sm:h-full flex flex-col sm:flex-row justify-start gap-6 p-4 sm:p-8 rounded-xl min-w-[280px]">
-      <figure className="aspect-square min-w-[240px] sm:h-auto min-h-[240px] sm:aspect-[9/16] md:aspect-square object-cover">
+      <figure className="aspect-square min-w-[240px] sm:min-w-fit  sm:h-auto min-h-[240px] sm:aspect-[9/16] md:aspect-square object-cover">
         <img
           src={src}
           alt={alt}
@@ -34,7 +34,7 @@ const PracticeCard = ({
             ))}
           </div>
         </header>
-        <main className="text-[15px] tracking-wide text-gray-400 mt-4 mb-16">
+        <main className="text-[15px] tracking-wide text-gray-400 mt-2 mb-16">
           <p className="line-clamp-4">{paragraph}</p>
         </main>
 
