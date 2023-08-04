@@ -11,11 +11,11 @@ const Practice = () => {
   const sortedPractices = [...Practices].sort(compareDates);
 
   return (
-    <section className="flex flex-col mt-10 bg-[#0D0D0E] p-12 rounded-xl gap-5">
+    <section className="flex flex-col mt-10 bg-[#0D0D0E] p-7 sm:p-12 rounded-xl gap-5">
       <header className="flex flex-col gap-3">
         <h2 className="text-2xl font-semibold">Practicas personales</h2>
       </header>
-      <div className="flex sm:grid sm:grid-cols-1 xl:grid-cols-2 auto-rows-[300px] place-items-center overflow-x-auto no-scrollbar">
+      <div className="flex sm:grid sm:grid-cols-1 xl:grid-cols-2 auto-rows-[310px] place-items-start overflow-x-auto no-scrollbar gap-6">
         {sortedPractices.map(({ Project }) => (
           <PracticeCard
             key={Project.title}
