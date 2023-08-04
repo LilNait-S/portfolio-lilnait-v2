@@ -1,5 +1,3 @@
-'use client'
-
 import Practice from "@/components/Sections/Practice";
 import Work from "@/components/Sections/Work";
 import DesktopView from "@/components/Views/DesktopView";

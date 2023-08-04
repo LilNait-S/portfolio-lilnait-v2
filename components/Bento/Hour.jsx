@@ -1,5 +1,3 @@
-'use client'
-
 const Hour = () => {
   const formatedHours = new Date(Date.now()).toLocaleString("es-ES", {
     hour: "2-digit",

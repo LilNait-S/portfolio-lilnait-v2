@@ -1,5 +1,3 @@
-"use client";
-
 const LargeDate = () => {
   const longDate = new Date(Date.now()).toLocaleString("es-ES", {
     day: "2-digit",
