@@ -1,4 +1,4 @@
-import { AiFillEye, AiFillGithub } from "react-icons/ai";
+import { AiFillGithub } from "react-icons/ai";
 import IconCard from "./IconCard";
 import Link from "next/link";
 import { BiLink } from "react-icons/bi";
@@ -7,10 +7,11 @@ const PracticeCard = ({
   title,
   src,
   alt,
-  LinkGithub,
-  LinkProject,
+  linkGithub,
+  linkProject,
   paragraph,
   iconsTec,
+  date,
 }) => {
   return (
     <section className="relative h-[300px] w-[570px] flex justify-start gap-6 p-8 rounded-xl ">
@@ -24,19 +25,19 @@ const PracticeCard = ({
         />
       </figure>
 
-      <div className="flex flex-col h-full ">
+      <div className="relative flex flex-col h-full">
         <div className="h-[70%]">
           <header className="flex justify-between">
             <h2 className="text-2xl font-semibold tracking-tight">{title}</h2>
             <div className="flex items-center">
-              {LinkProject && (
-                <Link href={LinkProject} className="p-2" target="_blank">
+              {linkProject && (
+                <Link href={linkProject} className="p-2" target="_blank">
                   <span className="sr-only">Link to Project</span>
                   <BiLink className="text-[#c532ff] min-h-[20px] min-w-[20px]" />
                 </Link>
               )}
-              {LinkGithub && (
-                <Link href={LinkGithub} className="p-2" target="_blank">
+              {linkGithub && (
+                <Link href={linkGithub} className="p-2" target="_blank">
                   <span className="sr-only">Link to Github repository</span>
                   <AiFillGithub className="text-[#c532ff] min-h-[20px] min-w-[20px]" />
                 </Link>

@@ -66,8 +66,8 @@ export const Works = [
       date: "2023-03-20",
       src: "/dashboardIA.webp",
       alt: "Landing page dashboardIA",
-      linkGithub: null,
-      linkProject: null,
+      linkGithub: "/",
+      linkProject: "/",
       icons: [
         { title: "Figma", icon: <IconFigma width="20" height="20" /> },
         { title: "Next js", icon: <IconNextjs width="20" height="20" /> },
@@ -75,14 +75,16 @@ export const Works = [
         { title: "Vercel", icon: <IconVercel width="20" height="20" /> },
       ],
     },
+  },
+  {
     work: {
       title: "Aini28",
       paragraph:
         "Desarrollé un ecommerce de peluches. Incluye filtros portamaño, buscador, carrito de compras y cotizador.También se destaca por ofertas especiales, envíosrápidos y atención al cliente dedicada. El proyecto busca brindar una experiencia de compra emocionante y satisfactoria.",
       date: "2023-01-30",
-      src: "/.webp",
+      src: "/aini.webp",
       alt: "Landing page Aini28",
-      linkGithub: null,
+      linkGithub: "/",
       linkProject: "https://aini28.com/",
       icons: [
         { title: "Figma", icon: <IconFigma width="20" height="20" /> },
@@ -106,8 +108,8 @@ export const Practices = [
       // date: new Date(2023, 0, 1),
       src: "/promptopia.webp",
       alt: "Promptopia photo",
-      LinkGithub: "https://github.com/LilNait-S/promptopia",
-      LinkProject: "https://promptopia-hw6vooo66-lilnait-s.vercel.app/",
+      linkGithub: "https://github.com/LilNait-S/promptopia",
+      linkProject: "https://promptopia-hw6vooo66-lilnait-s.vercel.app/",
       icons: [
         { title: "Next js", icon: <IconNextjs width="20" height="20" /> },
         { title: "MongoDB", icon: <IconMongoDB width="20" height="20" /> },
@@ -123,8 +125,8 @@ export const Practices = [
       date: "2023-01-31",
       src: "/pokepage.webp",
       alt: "Pokepage photo",
-      LinkGithub: "https://github.com/LilNait-S/pokepage",
-      LinkProject: "https://pokepage-henna.vercel.app/pokedex",
+      linkGithub: "https://github.com/LilNait-S/pokepage",
+      linkProject: "https://pokepage-henna.vercel.app/pokedex",
       icons: [
         {
           title: "TypeScript",
@@ -144,8 +146,8 @@ export const Practices = [
       date: "2023-03-02",
       src: "/yariga.webp",
       alt: "Yariga photo",
-      LinkGithub: "https://github.com/LilNait-S/refine_dashboard",
-      LinkProject: "https://yariga-dashboard-refine-lilnait.vercel.app/",
+      linkGithub: "https://github.com/LilNait-S/refine_dashboard",
+      linkProject: "https://yariga-dashboard-refine-lilnait.vercel.app/",
       icons: [
         {
           title: "TypeScript",
@@ -162,8 +164,8 @@ export const Practices = [
       date: "2023-02-06",
       src: "/todolist.webp",
       alt: "To do List photo",
-      LinkGithub: "https://github.com/LilNait-S/to-do-list",
-      LinkProject: "https://to-do-list-six-mu.vercel.app/",
+      linkGithub: "https://github.com/LilNait-S/to-do-list",
+      linkProject: "https://to-do-list-six-mu.vercel.app/",
       icons: [
         {
           title: "TypeScript",
@@ -181,8 +183,8 @@ export const Practices = [
       date: "2023-03-13",
       src: "/weatherApp.webp",
       alt: "Weather app photo",
-      LinkGithub: "https://github.com/LilNait-S/to-do-list",
-      LinkProject: "https://weather-app-rosy-kappa.vercel.app/",
+      linkGithub: "https://github.com/LilNait-S/to-do-list",
+      linkProject: "https://weather-app-rosy-kappa.vercel.app/",
       icons: [
         { title: "Figma", icon: <IconFigma width="20" height="20" /> },
         {
@@ -190,6 +192,28 @@ export const Practices = [
           icon: <IconJavascript width="20" height="20" />,
         },
         { title: "React", icon: <IconReact width="20" height="20" /> },
+        { title: "Tailwind", icon: <IconTailwind width="20" height="20" /> },
+      ],
+    },
+  },
+  {
+    Project: {
+      title: "Flexibble",
+      paragraph: "Dribbble clone, con CRUD y registro con google",
+      date: "2023-07-15",
+      src: "/flexibble.webp",
+      alt: "flexibble app photo",
+      linkGithub: "https://github.com/LilNait-S/grafbase-flexibble",
+      linkProject: "https://flexibble-lilnait.vercel.app/",
+      icons: [
+        {
+          title: "Next js",
+          icon: <IconNextjs width="20" height="20" />,
+        },
+        {
+          title: "GraphQL",
+          icon: <IconGraphQL width="20" height="20" />,
+        },
         { title: "Tailwind", icon: <IconTailwind width="20" height="20" /> },
       ],
     },
