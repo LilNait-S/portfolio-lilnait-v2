@@ -66,8 +66,8 @@ export const Works = [
       date: "2023-03-20",
       src: "/dashboardIA.webp",
       alt: "Landing page dashboardIA",
-      linkGithub: "/",
-      linkProject: "/",
+      linkGithub: null,
+      linkProject: null,
       icons: [
         { title: "Figma", icon: <IconFigma width="20" height="20" /> },
         { title: "Next js", icon: <IconNextjs width="20" height="20" /> },
@@ -84,7 +84,7 @@ export const Works = [
       date: "2023-01-30",
       src: "/aini.webp",
       alt: "Landing page Aini28",
-      linkGithub: "/",
+      linkGithub: null,
       linkProject: "https://aini28.com/",
       icons: [
         { title: "Figma", icon: <IconFigma width="20" height="20" /> },
