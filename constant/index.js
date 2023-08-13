@@ -101,11 +101,29 @@ export const Works = [
 export const Practices = [
   {
     Project: {
+      title: "Threads clone",
+      paragraph:
+        "He creado una aplicación similar a Threads, pero con un enfoque en la creación de comunidades. La plataforma permite a los usuarios crear comunidades, realizar publicaciones y personalizar sus perfiles. Esta aplicación ofrece una experiencia interactiva y estructurada mientras fomenta la participación en torno a intereses compartidos.",
+      date: "2023-08-12", // Formato: "YYYY-MM-DD"
+      // date: new Date(2023, 0, 1),
+      src: "/threads.webp",
+      alt: "Threads clone photo",
+      linkGithub: "https://github.com/LilNait-S/threads-lilnait",
+      linkProject: "https://threads-lilnait.vercel.app/",
+      icons: [
+        { title: "TypeScript", icon: <IconTypeScript width="20" height="20" /> },
+        { title: "Next js", icon: <IconNextjs width="20" height="20" /> },
+        { title: "MongoDB", icon: <IconMongoDB width="20" height="20" /> },
+        { title: "Vercel", icon: <IconVercel width="20" height="20" /> },
+      ],
+    },
+  },
+  {
+    Project: {
       title: "Promptopia",
       paragraph:
         "Sitio donde puedes compartir tus mejores prompt con la comunidad, puedes registrarte con tu gmail, crea, edita o comparte tus prompt.",
-      date: "2023-06-28", // Formato: "YYYY-MM-DD"
-      // date: new Date(2023, 0, 1),
+      date: "2023-06-28",
       src: "/promptopia.webp",
       alt: "Promptopia photo",
       linkGithub: "https://github.com/LilNait-S/promptopia",
