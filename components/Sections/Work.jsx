@@ -1,3 +1,4 @@
+import { formatDate } from "@/lib/utils";
 import WorkCard from "../WorkCard";
 import { Works } from "@/constant";
 
@@ -15,7 +16,8 @@ const Work = () => {
               title={work.title}
               src={work.src}
               alt={work.alt}
-              date={new Date(work.date).getFullYear()}
+              date={formatDate(work.date)}
+              dateEnd={formatDate(work.dateEnd)}
               LinkGithub={work.linkGithub}
               LinkProject={work.linkProject}
               paragraph={work.paragraph}

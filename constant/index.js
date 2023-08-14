@@ -1,4 +1,4 @@
-import { IconSanity, IconVercel } from "@/components/Icons/Tags";
+import { IconAstro, IconSanity, IconVercel } from "@/components/Icons/Tags";
 import {
   IconFigma,
   IconGraphQL,
@@ -64,6 +64,7 @@ export const Works = [
       paragraph:
         "Desarrollé un dashboard que ha permitido potenciar el desarrollo y la efectividad de la IA, brindando a los usuarios un entorno completo para interactuar con ella, entrenarla y optimizar su rendimiento.",
       date: "2023-03-20",
+      dateEnd: "2023-09-20",
       src: "/dashboardIA.webp",
       alt: "Landing page dashboardIA",
       linkGithub: null,
@@ -81,7 +82,8 @@ export const Works = [
       title: "Aini28",
       paragraph:
         "Desarrollé un ecommerce de peluches. Incluye filtros portamaño, buscador, carrito de compras y cotizador.También se destaca por ofertas especiales, envíosrápidos y atención al cliente dedicada. El proyecto busca brindar una experiencia de compra emocionante y satisfactoria.",
-      date: "2023-01-30",
+      date: "2022-12-10",
+      dateEnd: "2023-01-30",
       src: "/aini.webp",
       alt: "Landing page Aini28",
       linkGithub: null,
@@ -101,17 +103,39 @@ export const Works = [
 export const Practices = [
   {
     Project: {
+      title: "Tesla landing page",
+      paragraph:
+        'He desarrollado una réplica de la página de inicio de Tesla en la que he implementado características avanzadas de diseño y navegación. Mediante el uso de la tecnología Intersection Observer, logré un efecto dinámico en el color de la tipografía de la barra de navegación, adaptándolo según la sección que está visible en la pantalla. Además, para una experiencia de desplazamiento suave y centrada, he empleado la propiedad CSS "scroll-snap-type" en los sliders, asegurando que las transiciones entre imágenes sean precisas y atractivas a medida que los usuarios navegan a través del contenido destacado.',
+      date: "2023-08-15", // Formato: "YYYY-MM-DD"
+      // date: new Date(2023, 0, 1),
+      src: "/tesla.webp",
+      alt: "Tesla landing",
+      linkGithub: "https://github.com/LilNait-S/tesla-landing",
+      linkProject: "https://luxury-lily-c4541c.netlify.app/",
+      icons: [
+        {
+          title: "Astro",
+          icon: <IconAstro width="20" height="20" />,
+        },
+        ,
+      ],
+    },
+  },
+  {
+    Project: {
       title: "Threads clone",
       paragraph:
         "He creado una aplicación similar a Threads, pero con un enfoque en la creación de comunidades. La plataforma permite a los usuarios crear comunidades, realizar publicaciones y personalizar sus perfiles. Esta aplicación ofrece una experiencia interactiva y estructurada mientras fomenta la participación en torno a intereses compartidos.",
-      date: "2023-08-12", // Formato: "YYYY-MM-DD"
-      // date: new Date(2023, 0, 1),
+      date: "2023-08-12",
       src: "/threads.webp",
       alt: "Threads clone photo",
       linkGithub: "https://github.com/LilNait-S/threads-lilnait",
       linkProject: "https://threads-lilnait.vercel.app/",
       icons: [
-        { title: "TypeScript", icon: <IconTypeScript width="20" height="20" /> },
+        {
+          title: "TypeScript",
+          icon: <IconTypeScript width="20" height="20" />,
+        },
         { title: "Next js", icon: <IconNextjs width="20" height="20" /> },
         { title: "MongoDB", icon: <IconMongoDB width="20" height="20" /> },
         { title: "Vercel", icon: <IconVercel width="20" height="20" /> },

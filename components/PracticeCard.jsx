@@ -39,7 +39,7 @@ const PracticeCard = ({
         </main>
 
         <footer className="absolute bottom-0 left-0 mt-auto flex w-full items-center justify-end gap-2 ">
-          <div className="mr-auto text-base font-semibold">{date}</div>
+          <div className="mr-auto text-base">{date}</div>
 
           <div className="flex items-center gap-1">
             {linkProject && (

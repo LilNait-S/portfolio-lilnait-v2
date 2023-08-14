@@ -1,5 +1,6 @@
 import { Practices } from "@/constant";
 import PracticeCard from "../PracticeCard";
+import { formatDate } from "@/lib/utils";
 
 function compareDates(a, b) {
   const dateA = new Date(a.Project.date);
@@ -22,7 +23,7 @@ const Practice = () => {
             title={Project.title}
             src={Project.src}
             alt={Project.alt}
-            date={new Date(Project.date).getFullYear()}
+            date={formatDate(Project.date)}
             linkGithub={Project.linkGithub}
             linkProject={Project.linkProject}
             paragraph={Project.paragraph}

@@ -12,6 +12,7 @@ const WorkCard = ({
   paragraph,
   iconsTec,
   date,
+  dateEnd,
 }) => {
   return (
     <section className="relative h-full sm:h-[350px] w-full flex flex-col sm:flex-row justify-start gap-6 p-4 sm:p-8 rounded-xl bg-gradient">
@@ -39,7 +40,9 @@ const WorkCard = ({
         </main>
 
         <footer className="absolute bottom-0 left-0 mt-auto flex w-full items-center justify-end gap-2 ">
-          <div className="mr-auto text-base font-semibold">{date}</div>
+          <div className="mr-auto text-base">
+            {date} - {dateEnd}
+          </div>
 
           <div className="flex items-center gap-1">
             {LinkProject && (
