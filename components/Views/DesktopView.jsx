@@ -8,7 +8,7 @@ import Knowledge from "../Bento/Knowledge";
 
 const DesktopView = () => {
   return (
-    <div className="auto-rows-[100px] grid-cols-2 lg:auto-rows-[150px] lg:grid-cols-8 gap-5 hidden lg:grid">
+    <div id="about-me" className="auto-rows-[100px] grid-cols-2 lg:auto-rows-[150px] lg:grid-cols-8 gap-5 hidden lg:grid">
       {[...Array(9)].map((_, i) => (
         <div
           key={i}

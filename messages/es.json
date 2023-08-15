@@ -1,0 +1,30 @@
+{
+  "len": {
+    "en": "Inglés",
+    "es": "Español"
+  },
+  "About-me": {
+    "subTitle": "Adaptabilidad | Comunicación asertiva | Creatividad",
+    "paragraph": "En búsqueda de oportunidades para mejorar y crecer profesionalmente. Siempre estoy dispuesto a enfrentar nuevos desafíos y llevar proyectos web emocionantes al siguiente nivel."
+  },
+  "Knowledge": {
+    "web": "Desarrollador web"
+  },
+  "Tec": {
+    "title": "Tecnologías"
+  },
+  "navbar": {
+    "aboutMe": {
+      "title": "Sobre mi",
+      "route": "/"
+    },
+    "work": {
+      "title": "Trabajo",
+      "route": "#works"
+    },
+    "internships": {
+      "title": "Practicas",
+      "route": "#practice"
+    }
+  }
+}

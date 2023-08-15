@@ -103,7 +103,7 @@ export const Works = [
 export const Practices = [
   {
     Project: {
-      title: "Tesla landing page",
+      title: "Tesla",
       paragraph:
         'He desarrollado una réplica de la página de inicio de Tesla en la que he implementado características avanzadas de diseño y navegación. Mediante el uso de la tecnología Intersection Observer, logré un efecto dinámico en el color de la tipografía de la barra de navegación, adaptándolo según la sección que está visible en la pantalla. Además, para una experiencia de desplazamiento suave y centrada, he empleado la propiedad CSS "scroll-snap-type" en los sliders, asegurando que las transiciones entre imágenes sean precisas y atractivas a medida que los usuarios navegan a través del contenido destacado.',
       date: "2023-08-15", // Formato: "YYYY-MM-DD"

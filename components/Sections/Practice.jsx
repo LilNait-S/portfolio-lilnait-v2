@@ -12,7 +12,7 @@ const Practice = () => {
   const sortedPractices = [...Practices].sort(compareDates);
 
   return (
-    <section className="flex flex-col mt-10 bg-[#0D0D0E] p-7 sm:p-12 rounded-xl gap-5">
+    <section id="practice" className="flex flex-col mt-10 bg-[#0D0D0E] p-7 sm:p-12 rounded-xl gap-5">
       <header className="flex flex-col gap-3">
         <h2 className="text-2xl font-semibold">Practicas personales</h2>
       </header>

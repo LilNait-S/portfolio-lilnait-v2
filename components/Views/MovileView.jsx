@@ -8,7 +8,7 @@ import Hour from "../Bento/Hour";
 
 const MovileView = () => {
   return (
-    <div className="grid auto-rows-[100px] grid-cols-2 sm:grid-cols-4 lg:auto-rows-[150px] lg:grid-cols-8 gap-5 lg:hidden">
+    <div id="about-me" className="grid auto-rows-[100px] grid-cols-2 sm:grid-cols-4 lg:auto-rows-[150px] lg:grid-cols-8 gap-5 lg:hidden">
       {[...Array(7)].map((_, i) => (
         <div
           key={i}

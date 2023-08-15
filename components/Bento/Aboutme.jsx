@@ -2,9 +2,12 @@ import Link from "next/link";
 import React from "react";
 import { AiFillGithub } from "react-icons/ai";
 import { BsLinkedin } from "react-icons/bs";
-import { HiMail } from "react-icons/hi";
+import { useTranslations } from "next-intl";
 
 const Aboutme = () => {
+
+  const t = useTranslations('About-me');
+
   return (
     <div className="relative flex flex-col lg:flex-row w-full h-full lg:justify-between justify-around ">
       <div className=" flex flex-col px-4 py-4 lg:p-8 justify-between">
@@ -13,12 +16,10 @@ const Aboutme = () => {
             Sergio Delgado
           </h1>
           <h2 className="text-xs lg:text-base font-medium purple_gradient">
-            Adaptabilidad | Comunicación asertiva | Creatividad
+            {t("subTitle")}
           </h2>
           <p className="text-xs lg:text-base text-gray-400 lg:leading-7 mt-2">
-            En búsqueda de oportunidades para mejorar y crecer profesionalmente.
-            Siempre estoy dispuesto a enfrentar nuevos desafíos y llevar
-            proyectos web emocionantes al siguiente nivel.
+            {t("paragraph")}
           </p>
         </div>
         <div className="flex-col lg:flex-row justify-end hidden lg:flex">

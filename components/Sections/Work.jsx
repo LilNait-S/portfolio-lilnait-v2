@@ -4,7 +4,7 @@ import { Works } from "@/constant";
 
 const Work = () => {
   return (
-    <section className="flex flex-col mt-10 bg-[#0D0D0E] p-7 sm:p-12 rounded-xl gap-5">
+    <section id="works" className="flex flex-col mt-10 bg-[#0D0D0E] p-7 sm:p-12 rounded-xl gap-5">
       <header className="flex flex-col gap-3">
         <h2 className="text-2xl font-semibold">Revisa mi trabajo</h2>
       </header>
