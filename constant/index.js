@@ -60,9 +60,8 @@ export const tecnologys = [
 export const Works = [
   {
     work: {
+      id: "1",
       title: "Seometric.io",
-      paragraph:
-        "Desarrollé un dashboard que ha permitido potenciar el desarrollo y la efectividad de la IA, brindando a los usuarios un entorno completo para interactuar con ella, entrenarla y optimizar su rendimiento.",
       date: "2023-03-20",
       dateEnd: "2023-09-20",
       src: "/dashboardIA.webp",
@@ -79,9 +78,8 @@ export const Works = [
   },
   {
     work: {
+      id: "2",
       title: "Aini28",
-      paragraph:
-        "Desarrollé un ecommerce de peluches. Incluye filtros portamaño, buscador, carrito de compras y cotizador.También se destaca por ofertas especiales, envíosrápidos y atención al cliente dedicada. El proyecto busca brindar una experiencia de compra emocionante y satisfactoria.",
       date: "2022-12-10",
       dateEnd: "2023-01-30",
       src: "/aini.webp",
@@ -102,7 +100,8 @@ export const Works = [
 
 export const Practices = [
   {
-    Project: {
+    project: {
+      id: "1",
       title: "Tesla",
       paragraph:
         'He desarrollado una réplica de la página de inicio de Tesla en la que he implementado características avanzadas de diseño y navegación. Mediante el uso de la tecnología Intersection Observer, logré un efecto dinámico en el color de la tipografía de la barra de navegación, adaptándolo según la sección que está visible en la pantalla. Además, para una experiencia de desplazamiento suave y centrada, he empleado la propiedad CSS "scroll-snap-type" en los sliders, asegurando que las transiciones entre imágenes sean precisas y atractivas a medida que los usuarios navegan a través del contenido destacado.',
@@ -122,7 +121,8 @@ export const Practices = [
     },
   },
   {
-    Project: {
+    project: {
+      id: "2",
       title: "Threads clone",
       paragraph:
         "He creado una aplicación similar a Threads, pero con un enfoque en la creación de comunidades. La plataforma permite a los usuarios crear comunidades, realizar publicaciones y personalizar sus perfiles. Esta aplicación ofrece una experiencia interactiva y estructurada mientras fomenta la participación en torno a intereses compartidos.",
@@ -143,7 +143,8 @@ export const Practices = [
     },
   },
   {
-    Project: {
+    project: {
+      id: "3",
       title: "Promptopia",
       paragraph:
         "Sitio donde puedes compartir tus mejores prompt con la comunidad, puedes registrarte con tu gmail, crea, edita o comparte tus prompt.",
@@ -160,7 +161,8 @@ export const Practices = [
     },
   },
   {
-    Project: {
+    project: {
+      id: "4",
       title: "Pokepage",
       paragraph:
         "Pokedex de Pokémon, desarrollado con TypeScript y Vite. Esta aplicación web ofrece una experiencia interactiva y rápida para explorar una amplia variedad de Pokémon.",
@@ -181,7 +183,8 @@ export const Practices = [
     },
   },
   {
-    Project: {
+    project: {
+      id: "5",
       title: "Yariga",
       paragraph:
         "Dashboard creada para ofrecer inmuebles en venta, alquiler, etc. Cuenta con charts y Auth con google.",
@@ -200,7 +203,8 @@ export const Practices = [
     },
   },
   {
-    Project: {
+    project: {
+      id: "6",
       title: "To do List",
       paragraph: "Aplicación para anotar cosas.",
       date: "2023-02-06",
@@ -219,7 +223,8 @@ export const Practices = [
     },
   },
   {
-    Project: {
+    project: {
+      id: "7",
       title: "Weather App",
       paragraph: "Aplicación para ver el clima por ciudades, con buscador.",
       date: "2023-03-13",
@@ -239,7 +244,8 @@ export const Practices = [
     },
   },
   {
-    Project: {
+    project: {
+      id: "8",
       title: "Flexibble",
       paragraph: "Dribbble clone, con CRUD y registro con google",
       date: "2023-07-15",
@@ -259,42 +265,5 @@ export const Practices = [
         { title: "Tailwind", icon: <IconTailwind width="20" height="20" /> },
       ],
     },
-  },
-];
-
-/* Tags */
-export const tagsWork = [
-  {
-    title: "Todo",
-    value: "All Projects",
-    name: "Tag Work Filter",
-  },
-  {
-    title: "Independiente",
-    value: "Freelance",
-    name: "Tag Work Filter",
-  },
-  {
-    title: "Empresas",
-    value: "Business",
-    name: "Tag Work Filter",
-  },
-];
-
-export const tagsPractice = [
-  {
-    title: "Todo",
-    value: "All Projects",
-    name: "Tag Practice Filter",
-  },
-  {
-    title: "Practica",
-    value: "Practice",
-    name: "Tag Practice Filter",
-  },
-  {
-    title: "Pruebas técnicas",
-    value: "Technical tests",
-    name: "Tag Practice Filter",
   },
 ];

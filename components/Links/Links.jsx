@@ -1,24 +1,9 @@
+import { sidebarLinks } from "@/constant/navbar";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
-import React from "react";
 
 const Links = () => {
   const t = useTranslations("navbar");
-
-  const sidebarLinks = [
-    {
-      title: "aboutMe.title",
-      route: "/",
-    },
-    {
-      title: "work.title",
-      route: "#works",
-    },
-    {
-      title: "internships.title",
-      route: "#practice",
-    },
-  ];
 
   return (
     <nav className="hidden xl:block sm:hidden">
@@ -34,13 +19,3 @@ const Links = () => {
 };
 
 export default Links;
-// {sidebarLinks.map(({ label, route }) => (
-//     <li
-//       key={label}
-//       className="shadow-md "
-//       onMouseEnter={handleMouseEnter}
-//       onMouseLeave={handleMouseLeave}
-//     >
-//       <Link href={route}>{label}</Link>
-//     </li>
-//   ))}

@@ -1,31 +1,26 @@
 "use client";
 
+import { formatDateLong } from "@/lib/utils";
 import { useState, useEffect } from "react";
+import { useFormatter } from "next-intl";
 
 const LargeDate = () => {
+  const format = useFormatter();
   const [formattedDate, setFormattedDate] = useState("");
   const [weekday, setWeekday] = useState("");
 
   useEffect(() => {
-    // Obtenemos la fecha y el día de la semana local del cliente
     const clientDate = new Date();
     const clientTimeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
 
-    // Formateamos la fecha usando la zona horaria del cliente
-    const longDate = clientDate.toLocaleString("es-ES", {
-      day: "2-digit",
-      month: "long",
-      year: "numeric",
-      timeZone: clientTimeZone,
+    const { weekday, longDate } = formatDateLong({
+      clientDate,
+      clientTimeZone,
+      format,
     });
 
-    const clientWeekday = clientDate.toLocaleString("es-ES", {
-      weekday: "long",
-      timeZone: clientTimeZone,
-    });
-
+    setWeekday(weekday);
     setFormattedDate(longDate);
-    setWeekday(clientWeekday);
   }, []);
 
   return (

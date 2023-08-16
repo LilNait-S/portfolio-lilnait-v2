@@ -13,13 +13,13 @@ const LanguageButton = () => {
   };
 
   return (
-    <div className="relative">
-      <button onClick={toggleLanguage}>
+    <div className="relative flex justify-center items-center h-full">
+      <button onClick={toggleLanguage} className="relative">
         <IconLanguage height="27" width="27" />
       </button>
 
       {language && (
-        <div className="absolute flex flex-col right-0 bg-[#141414] p-2 rounded-lg">
+        <div className="absolute flex flex-col top-8 right-0 bg-[#141414] p-2 rounded-lg">
           <Link
             href="/"
             locale="en"

@@ -26,5 +26,60 @@
       "title": "Internships",
       "route": "#practice"
     }
+  },
+  "footer": {
+    "title": "All Rights Reserved."
+  },
+  "works": {
+    "seometric": {
+      "id": "1",
+      "paragraph": "I developed a dashboard that has empowered the development and effectiveness of AI, providing users with a complete environment to interact with it, train it, and optimize its performance."
+    },
+    "aini28": {
+      "id": "2",
+      "paragraph": "I developed a stuffed animal ecommerce website. It includes size filters, a search engine, a shopping cart, and a quoting system. It also stands out for special offers, fast shipping, and dedicated customer service. The project aims to provide an exciting and satisfying shopping experience."
+    }
+  },
+  "practices": {
+    "tesla": {
+      "id": "1",
+      "title": "Tesla",
+      "paragraph": "I have developed a replica of Tesla's homepage where I have implemented advanced design and navigation features. By using Intersection Observer technology, I achieved a dynamic effect on the typography color of the navigation bar, adapting it based on the visible section on the screen. Additionally, for a smooth and centered scrolling experience, I utilized the CSS property 'scroll-snap-type' on the sliders, ensuring that transitions between images are precise and engaging as users navigate through the featured content."
+    },
+    "Threads": {
+      "id": "2",
+      "title": "Threads",
+      "paragraph": "I have created an application similar to Threads, but with a focus on creating communities. The platform allows users to create communities, make posts, and customize their profiles. This application provides an interactive and structured experience while encouraging participation around shared interests."
+    },
+    "Promptopia": {
+      "id": "3",
+      "title": "Promptopia",
+      "paragraph": "A site where you can share your best prompts with the community. You can register with your Gmail account, create, edit, or share your prompts."
+    },
+    "Pokepage": {
+      "id": "4",
+      "title": "Pokepage",
+      "paragraph": "Pokémon Pokedex, developed with TypeScript and Vite. This web application offers an interactive and fast experience to explore a wide variety of Pokémon."
+    },
+    "Yariga": {
+      "id": "5",
+      "title": "Yariga",
+      "paragraph": "Dashboard created to offer properties for sale, rent, etc. It features charts and Google Authentication."
+    },
+    "ToDoList": {
+      "id": "6",
+      "title": "ToDoList",
+      "paragraph": "Application for jotting down tasks."
+    },
+    "WeatherApp": {
+      "id": "7",
+      "title": "Weather App",
+      "paragraph": "Application for checking the weather by cities, with a search feature."
+    },
+    "Flexibble": {
+      "id": "8",
+      "title": "Flexibble",
+      "paragraph": "Dribbble clone with CRUD operations and Google registration."
+    }
   }
 }

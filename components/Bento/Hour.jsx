@@ -1,5 +1,6 @@
 "use client";
 
+import { formatHour } from "@/lib/utils";
 import { useState, useEffect } from "react";
 
 const Hour = () => {
@@ -13,14 +14,9 @@ const Hour = () => {
     const clientTimeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
 
     // Formateamos la hora usando la zona horaria del cliente
-    const formatedHours = clientDate.toLocaleString("es-ES", {
-      hour: "2-digit",
-      minute: "2-digit",
-      hour12: true,
-      timeZone: clientTimeZone,
-    });
+    const { hour } = formatHour({ clientDate, clientTimeZone });
 
-    setFormattedHour(formatedHours);
+    setFormattedHour(hour);
   }, []);
 
   return (
