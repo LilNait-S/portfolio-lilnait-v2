@@ -51,7 +51,7 @@ const Practice = () => {
       className="flex flex-col mt-10 bg-[#0D0D0E] p-7 sm:p-12 rounded-xl gap-5"
     >
       <header className="flex flex-col gap-3">
-        <h2 className="text-2xl font-semibold">Practicas personales</h2>
+        <h2 className="text-2xl font-semibold">{t("title")}</h2>
       </header>
       <div className="flex sm:grid sm:grid-cols-1 xl:grid-cols-2 auto-rows-[310px] place-items-start overflow-x-auto  gap-6">
         {newPractices.map(({ project }) => (

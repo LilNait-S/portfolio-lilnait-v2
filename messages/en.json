@@ -23,7 +23,7 @@
       "route": "#works"
     },
     "internships": {
-      "title": "Internships",
+      "title": "Projects",
       "route": "#practice"
     }
   },
@@ -31,6 +31,7 @@
     "title": "All Rights Reserved."
   },
   "works": {
+    "title": "Check my work",
     "seometric": {
       "id": "1",
       "paragraph": "I developed a dashboard that has empowered the development and effectiveness of AI, providing users with a complete environment to interact with it, train it, and optimize its performance."
@@ -41,6 +42,7 @@
     }
   },
   "practices": {
+    "title": "Projects",
     "tesla": {
       "id": "1",
       "title": "Tesla",

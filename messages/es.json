@@ -23,7 +23,7 @@
       "route": "#works"
     },
     "internships": {
-      "title": "Practicas",
+      "title": "Proyectos",
       "route": "#practice"
     }
   },
@@ -31,6 +31,7 @@
     "title": "Todos los derechos reservados."
   },
   "works": {
+    "title": "Revisa mi trabajo",
     "seometric": {
       "id": "1",
       "paragraph": "Desarrollé un dashboard que ha permitido potenciar el desarrollo y la efectividad de la IA, brindando a los usuarios un entorno completo para interactuar con ella, entrenarla y optimizar su rendimiento."
@@ -41,6 +42,7 @@
     }
   },
   "practices": {
+    "title": "Proyectos",
     "tesla": {
       "id": "1",
       "title": "Tesla",

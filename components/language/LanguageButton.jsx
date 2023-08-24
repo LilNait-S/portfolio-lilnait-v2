@@ -3,9 +3,8 @@ import { IconLanguage } from "../Icons";
 import Link from "next-intl/link";
 import { useTranslations } from "next-intl";
 
-
 const LanguageButton = () => {
-   const t = useTranslations('len');
+  const t = useTranslations("len");
   const [language, setLanguage] = useState(false);
 
   const toggleLanguage = () => {

@@ -39,7 +39,7 @@ const Work = () => {
       className="flex flex-col mt-10 bg-[#0D0D0E] p-7 sm:p-12 rounded-xl gap-5"
     >
       <header className="flex flex-col gap-3">
-        <h2 className="text-2xl font-semibold">Revisa mi trabajo</h2>
+        <h2 className="text-2xl font-semibold">{t("title")}</h2>
       </header>
       <div className="relative">
         <main className="flex flex-col gap-y-6">

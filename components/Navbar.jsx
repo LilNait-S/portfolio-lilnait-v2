@@ -53,38 +53,29 @@ const Navbar = () => {
     };
   }, []);
 
-  // div 
-  const [backdropStyles, setBackdropStyles] = useState({
-    left: "0",
-    top: "0",
-    width: "0",
-    height: "0",
+  useEffect(() => {
+    const listItem = document.querySelectorAll("#landing-header li");
+    const menuBackDrop = document.querySelector("#menu-backdrop");
 
-    opacity: 0,
-    visibility: "hidden",
-  });
+    listItem.forEach((item) => {
+      item.addEventListener("mouseenter", () => {
+        const { left, top, width, height } = item.getBoundingClientRect();
 
-  const handleMouseEnter = (event) => {
-    const { left, top, width, height } = event.target.getBoundingClientRect();
+        menuBackDrop.style.setProperty("--left", `${left}px`);
+        menuBackDrop.style.setProperty("--top", `${top}px`);
+        menuBackDrop.style.setProperty("--width", `${width}px`);
+        menuBackDrop.style.setProperty("--height", `${height}px`);
 
-    setBackdropStyles({
-      left: `${left}px`,
-      top: `${top}px`,
-      width: `${width}px`,
-      height: `${height}px`,
+        menuBackDrop.style.opacity = "1";
+        menuBackDrop.style.visibility = "visible";
+      });
 
-      opacity: 1,
-      visibility: "visible",
+      item.addEventListener("mouseleave", () => {
+        menuBackDrop.style.opacity = "0";
+        menuBackDrop.style.visibility = "hidden";
+      });
     });
-  };
-
-  const handleMouseLeave = () => {
-    setBackdropStyles({
-      ...backdropStyles,
-      opacity: 0,
-      visibility: "hidden",
-    });
-  };
+  }, []);
 
   return (
     <header
@@ -103,15 +94,17 @@ const Navbar = () => {
       <nav className="flex flex-grow justify-end basis-0">
         <LanguageButton />
       </nav>
-      {/* <div
-        className={`group absolute bg-purple-400/25  backdrop-blur-lg rounded
-        w-[${backdropStyles.width}] h-[${backdropStyles.height}]  left-0 top-0
-        translate-x-[${backdropStyles.left}] translate-y-[${backdropStyles.top}]
-        ${backdropStyles.visibility}
-
-        -z-10
-        `}
-      /> */}
+      <div
+        id="menu-backdrop"
+        className={`
+      absolute bg-purple-800 backdrop-blur-lg rounded
+      translate-x-[var(--left)] translate-y-[var(--top)]
+      left-0 top-0
+      w-[var(--width)] h-[var(--height)]
+      transition-all duration-500
+      ease-in-out opacity-0 -z-10
+    `}
+      />
     </header>
   );
 };
