@@ -14,6 +14,7 @@ const LanguageButton = () => {
   return (
     <div className="relative flex justify-center items-center h-full">
       <button onClick={toggleLanguage} className="relative">
+        <span class="sr-only">Language</span>
         <IconLanguage height="27" width="27" />
       </button>
 

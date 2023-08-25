@@ -87,6 +87,7 @@ const Navbar = () => {
     >
       <div className="flex flex-grow basis-0">
         <Link href="#">
+          <span class="sr-only">lilnait.dev Logo</span>
           <Logo />
         </Link>
       </div>
