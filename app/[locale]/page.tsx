@@ -1,4 +1,3 @@
-import Work from "@/components/Sections/Work";
 import BentoContainer from "@/components/Bento-container";
 import dynamic from "next/dynamic";
 
@@ -9,7 +8,6 @@ export default function Home() {
   return (
     <div className="max-w-[1300px] mx-auto mt-20">
       <BentoContainer />
-      <Work />
       <Practice />
     </div>
   );

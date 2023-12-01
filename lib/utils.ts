@@ -1,9 +1,14 @@
 import { Practices } from "@/constant";
 
-export const formatDate = ({ formatDate, format }) => {
+interface FormatDateProps {
+  formatDate: string;
+  format: any
+}
+
+export const formatDate = ({ formatDate, format }: FormatDateProps) => {
   const dateTime = new Date(formatDate);
 
-  const options = {
+  const options: Intl.DateTimeFormatOptions = {
     year: "numeric",
     month: "short",
     day: "numeric",
@@ -14,7 +19,13 @@ export const formatDate = ({ formatDate, format }) => {
   return date;
 };
 
-export const formatHour = ({ clientDate, clientTimeZone }) => {
+
+interface FormatHourProps {
+  clientDate: Date;
+  clientTimeZone: string;
+}
+
+export const formatHour = ({ clientDate, clientTimeZone }: FormatHourProps) => {
   const hour = clientDate.toLocaleString("es-ES", {
     hour: "2-digit",
     minute: "2-digit",
@@ -24,7 +35,17 @@ export const formatHour = ({ clientDate, clientTimeZone }) => {
   return { hour };
 };
 
-export const formatDateLong = ({ clientDate, clientTimeZone, format }) => {
+interface FormatDateLongProps {
+  clientDate: Date;
+  clientTimeZone: string;
+  format: any;
+}
+
+export const formatDateLong = ({
+  clientDate,
+  clientTimeZone,
+  format,
+}: FormatDateLongProps) => {
   const longDate = format.dateTime(clientDate, {
     day: "2-digit",
     month: "long",
@@ -40,19 +61,23 @@ export const formatDateLong = ({ clientDate, clientTimeZone, format }) => {
   return { weekday, longDate };
 };
 
-
-
-const compareDates = (a, b) => {
+const compareDates = (
+  a: { project: { date: string } },
+  b: { project: { date: string } }
+) => {
   const dateA = new Date(a.project.date);
   const dateB = new Date(b.project.date);
-  return dateB - dateA;
+  return dateB.getTime() - dateA.getTime();
 };
 
-export const getProjects = ({ addParagraph }) => {
+
+export const getProjects = ({ addParagraph } : any) => {
   const sortedPractices = [...Practices].sort(compareDates);
 
   const updatedPractices = sortedPractices.map((item) => {
-    const matchingNewWork = addParagraph.find((nw) => nw.id === item.project.id);
+    const matchingNewWork = addParagraph.find(
+      (nw: any) => nw.id === item.project.id
+    );
     if (matchingNewWork) {
       return {
         project: {

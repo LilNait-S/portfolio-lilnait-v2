@@ -29,25 +29,28 @@ const Navbar = () => {
 
   useEffect(() => {
     const listItem = document.querySelectorAll("#landing-header li");
-    const menuBackDrop: ElementCSSInlineStyle =
+    const menuBackDrop: Element | null =
       document.querySelector("#menu-backdrop");
 
     listItem.forEach((item) => {
       item.addEventListener("mouseenter", () => {
         const { left, top, width, height } = item.getBoundingClientRect();
+        if (menuBackDrop instanceof HTMLElement) {
+          menuBackDrop.style.setProperty("--left", `${left}px`);
+          menuBackDrop.style.setProperty("--top", `${top}px`);
+          menuBackDrop.style.setProperty("--width", `${width}px`);
+          menuBackDrop.style.setProperty("--height", `${height}px`);
 
-        menuBackDrop.style.setProperty("--left", `${left}px`);
-        menuBackDrop.style.setProperty("--top", `${top}px`);
-        menuBackDrop.style.setProperty("--width", `${width}px`);
-        menuBackDrop.style.setProperty("--height", `${height}px`);
-
-        menuBackDrop.style.opacity = "1";
-        menuBackDrop.style.visibility = "visible";
+          menuBackDrop.style.opacity = "1";
+          menuBackDrop.style.visibility = "visible";
+        }
       });
 
       item.addEventListener("mouseleave", () => {
-        menuBackDrop.style.opacity = "0";
-        menuBackDrop.style.visibility = "hidden";
+        if (menuBackDrop instanceof HTMLElement) {
+          menuBackDrop.style.opacity = "0";
+          menuBackDrop.style.visibility = "hidden";
+        }
       });
     });
   }, []);

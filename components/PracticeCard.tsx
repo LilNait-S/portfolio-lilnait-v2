@@ -2,8 +2,10 @@ import Link from "next/link";
 import { AiFillGithub } from "react-icons/ai";
 import { BiLink } from "react-icons/bi";
 import IconCard from "./IconCard";
+import { Practice } from "./types";
 
-const PracticeCard = ({
+
+const PracticeCard: React.FC<Practice> = ({
   title,
   src,
   alt,
@@ -29,9 +31,15 @@ const PracticeCard = ({
         <header className="flex flex-col">
           <h2 className="text-2xl font-bold purple_gradient">{title}</h2>
           <div className="flex gap-x-4 gap-y-1 flex-wrap mt-2">
-            {iconsTec.map(({ title, icon }) => (
-              <IconCard key={title} title={title} icon={icon} />
-            ))}
+            {iconsTec.map((iconObj) =>
+              iconObj ? (
+                <IconCard
+                  key={iconObj.title}
+                  title={iconObj.title}
+                  icon={iconObj.icon}
+                />
+              ) : null
+            )}
           </div>
         </header>
         <main className="text-[15px] tracking-wide text-gray-400 mt-2 mb-16">
