@@ -1,4 +1,4 @@
-import { formatDate, formatDateWork } from "@/lib/utils";
+import { formatDateWork } from "@/lib/utils";
 import { useTranslations } from "next-intl";
 import { useFormatter } from "next-intl";
 import { WorksConstants } from "@/constant/works-constants";
@@ -37,20 +37,20 @@ const Work = () => {
         <p className="font-light text-gray-400">{t("paragraph")}</p>
       </header>
       <div className="relative mt-8">
-        <main className="flex flex-col gap-y-10 ml-28">
+        <main className="flex flex-col gap-y-10 sm:ml-10 lg:ml-36">
           {updatedWorks.map(({ work }) => (
             <section key={work.id} className="flex flex-col relative">
               <aside className="absolute top-1 left-[4.5rem] hidden h-full print:!left-4 print:!block md:block xl:left-6 2xl:left-4 ">
                 <h3 className="absolute top-0 right-full pr-6 text-right text-xs font-medium leading-[16px] text-gray-400 print:!pr-8 print:!text-sm print:!text-gray-600 xl:pr-8">
                   <div className="spacing-1">
-                    <div className="whitespace-nowrap print:!mr-0 xl:mr-2">
+                    <div className="whitespace-nowrap capitalize">
                       {formatDateWork({
                         formatDate: work.dateStart,
                         format,
                       })}
                       <span className="hidden print:!inline xl:inline"> -</span>
                     </div>
-                    <div className="whitespace-nowrap">
+                    <div className="whitespace-nowrap capitalize">
                       {formatDateWork({
                         formatDate: work.dateEnd,
                         format,
@@ -71,7 +71,7 @@ const Work = () => {
                 </div>
 
                 <ul className="list-outside list-disc pl-4 text-gray-500">
-                  {work.achievements.map((entry) => (
+                  {work.achievements?.map((entry) => (
                     <li key={entry} className="font-light text-gray-400 pl-3">
                       {entry}
                     </li>

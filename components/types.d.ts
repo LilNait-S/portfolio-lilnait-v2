@@ -14,3 +14,30 @@ export interface Practice {
     | undefined
   >;
 }
+
+
+export interface workType {
+    id: string;
+    company: string;
+    typeWork: string;
+    dateStart: string;
+    dateEnd: string;
+    experience: string;
+    achievements?: string[]
+} 
+
+type Work = {
+  id: string;
+  company: string;
+  typeWork: string;
+  dateStart: string;
+  dateEnd: string;
+  experience: string;
+  achievements?: string[];
+};
+
+type WorkItem = {
+  work: Work;
+};
+
+export type WorksConstantsType = WorkItem[];

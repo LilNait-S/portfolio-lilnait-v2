@@ -32,11 +32,11 @@
     "paragraph": "Soy un apasionado desarrollador de software autodidacta en busca de nuevos desafíos. Me especializo en el desarrollo de front-end y backend sin servidor utilizando TypeScript, React.js y Node.js. Incluso cuando me enfrento a problemas difíciles, sé cómo abordarlos con paciencia, determinación y perseverancia inquebrantable.",
     "seometric": {
       "id": "1",
-      "paragraph": "Desarrollé un dashboard que ha permitido potenciar el desarrollo y la efectividad de la IA, brindando a los usuarios un entorno completo para interactuar con ella, entrenarla y optimizar su rendimiento."
+      "achievements": "Sistema de Métricas: Diseñé e implementé un sistema de métricas para proporcionar a los usuarios información valiosa sobre el rendimiento y los resultados de sus acciones. | Tablas de Selección de Datos: Desarrollé tablas interactivas que permitieron a los usuarios seleccionar datos de manera masiva, mejorando la eficiencia y la usabilidad. | Área de Pruebas de IA: Establecí un espacio de pruebas donde los usuarios podían realizar pruebas en la inteligencia artificial que desarrollamos, utilizando tecnologías como OpenAI y gpt3-tokenizer. | Importación de Documentos: Diseñé y programé botones que facilitaron la importación de documentos en formatos PDF, JSON y CSV, mejorando la interoperabilidad de la plataforma. | Sistema de Inicio de Sesión: Implementé un sistema de inicio de sesión seguro y fácil de usar para garantizar la autenticación del usuario. | Proceso de Diseño: Lideré el proceso de diseño desde la etapa de prototipado en Figma hasta la implementación del código, asegurando una experiencia de usuario coherente y atractiva. | Tecnologías Utilizadas: Para desarrollar esta plataforma, utilicé tecnologías como Next.js, Supabase, Theme UI, Zustand, OpenAI y gpt3-tokenizer."
     },
     "aini28": {
       "id": "2",
-      "paragraph": "Desarrollé un ecommerce de peluches. Incluye filtros portamaño, buscador, carrito de compras y cotizador.También se destaca por ofertas especiales, envíosrápidos y atención al cliente dedicada. El proyecto busca brindar una experiencia de compra emocionante y satisfactoria."
+      "achievements": "Diseñé el modelo en Figma. | Desarrollé el sitio web utilizando Next.js y Sanity. | Implementé filtros de tamaño para permitir a los usuarios encontrar rápidamente peluches según sus preferencias. | Agregué una barra de búsqueda eficiente para facilitar el descubrimiento de productos específicos. | Creé un carrito de compras interactivo y una función de cotización. | Mostré ofertas especiales para aumentar el atractivo de la plataforma."
     }
   },
   "practices": {

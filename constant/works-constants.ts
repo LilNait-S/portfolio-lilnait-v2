@@ -1,4 +1,6 @@
-export const WorksConstants = [
+import { type WorksConstantsType } from "@/components/types";
+
+export const WorksConstants: WorksConstantsType = [
   {
     work: {
       id: "1",
