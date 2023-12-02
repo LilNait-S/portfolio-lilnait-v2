@@ -53,7 +53,7 @@ const BentoContainer = () => {
               i === 6 ? "row-span-2 col-span-2 lg:row-span-2 lg:col-span-4" : ""
             }
             rounded-xl border-slate-400/10  ${i !== 3 && i !== 6 ? "p-4" : ""} 
-            bg-[#18111f8a] border-2 border-slate-400/10 bg-radial-gradient-farthest
+            bg-[#18111f8a] border-2 bg-radial-gradient-farthest
            `}
         >
           {i === 0 && <Aboutme />}

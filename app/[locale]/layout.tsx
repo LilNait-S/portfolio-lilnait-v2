@@ -34,9 +34,14 @@ export default async function RootLayout({
   return (
     <html lang={locale}>
       <body className={inter.className}>
+        <div className="main z-0">
+          <div className="gradient" />
+        </div>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Navbar />
-          <main className="container mx-auto px-3">{children}</main>
+          <main className="container mx-auto px-3 z-10 relative">
+            {children}
+          </main>
           <Footer />
         </NextIntlClientProvider>
       </body>

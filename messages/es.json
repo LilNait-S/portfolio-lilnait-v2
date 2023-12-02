@@ -6,7 +6,7 @@
   "About-me": {
     "paragraph": "En búsqueda de oportunidades para mejorar y crecer profesionalmente. Siempre estoy dispuesto a enfrentar nuevos desafíos y llevar proyectos web emocionantes al siguiente nivel."
   },
- 
+
   "Tec": {
     "title": "Tecnologías"
   },
@@ -28,7 +28,8 @@
     "title": "Todos los derechos reservados."
   },
   "works": {
-    "title": "Revisa mi trabajo",
+    "title": "Trabajos",
+    "paragraph": "Soy un apasionado desarrollador de software autodidacta en busca de nuevos desafíos. Me especializo en el desarrollo de front-end y backend sin servidor utilizando TypeScript, React.js y Node.js. Incluso cuando me enfrento a problemas difíciles, sé cómo abordarlos con paciencia, determinación y perseverancia inquebrantable.",
     "seometric": {
       "id": "1",
       "paragraph": "Desarrollé un dashboard que ha permitido potenciar el desarrollo y la efectividad de la IA, brindando a los usuarios un entorno completo para interactuar con ella, entrenarla y optimizar su rendimiento."

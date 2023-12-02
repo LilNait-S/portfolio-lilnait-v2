@@ -55,47 +55,6 @@ export const tecnologys = [
   },
 ];
 
-/* Work */
-
-export const Works = [
-  {
-    work: {
-      id: "1",
-      title: "Seometric.io",
-      date: "2023-03-20",
-      dateEnd: "2023-09-20",
-      src: "/seometric.webp",
-      alt: "Landing page dashboardIA",
-      linkGithub: null,
-      linkProject: null,
-      icons: [
-        { title: "Figma", icon: <IconFigma width="20" height="20" /> },
-        { title: "Next js", icon: <IconNextjs width="20" height="20" /> },
-        { title: "Supabase", icon: <IconSupabase width="20" height="20" /> },
-        { title: "Vercel", icon: <IconVercel width="20" height="20" /> },
-      ],
-    },
-  },
-  {
-    work: {
-      id: "2",
-      title: "Aini28",
-      date: "2022-12-10",
-      dateEnd: "2023-01-30",
-      src: "/aini28.webp",
-      alt: "Landing page Aini28",
-      linkGithub: null,
-      linkProject: "https://aini28.com/",
-      icons: [
-        { title: "Figma", icon: <IconFigma width="20" height="20" /> },
-        { title: "Next js", icon: <IconNextjs width="20" height="20" /> },
-        { title: "Sanity", icon: <IconSanity width="20" height="20" /> },
-        { title: "Vercel", icon: <IconVercel width="20" height="20" /> },
-      ],
-    },
-  },
-];
-
 /* practices */
 
 export const Practices = [

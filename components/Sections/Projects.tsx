@@ -4,7 +4,7 @@ import { formatDate, getProjects } from "@/lib/utils";
 import { useTranslations } from "next-intl";
 import { useFormatter } from "next-intl";
 
-const Practice = () => {
+const Projects = () => {
   const format = useFormatter();
   const t = useTranslations("practices");
 
@@ -46,10 +46,7 @@ const Practice = () => {
   const newPractices = getProjects({ addParagraph });
 
   return (
-    <section
-      id="practice"
-      className="flex flex-col mt-10 bg-[#0D0D0E] p-7 sm:p-12 rounded-xl gap-5"
-    >
+    <section id="practice" className="flex flex-col mt-28  rounded-xl gap-5">
       <header className="flex flex-col gap-3">
         <h2 className="text-2xl font-semibold">{t("title")}</h2>
       </header>
@@ -72,4 +69,4 @@ const Practice = () => {
   );
 };
 
-export default Practice;
+export default Projects;

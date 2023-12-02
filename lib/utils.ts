@@ -2,7 +2,7 @@ import { Practices } from "@/constant";
 
 interface FormatDateProps {
   formatDate: string;
-  format: any
+  format: any;
 }
 
 export const formatDate = ({ formatDate, format }: FormatDateProps) => {
@@ -19,6 +19,24 @@ export const formatDate = ({ formatDate, format }: FormatDateProps) => {
   return date;
 };
 
+export const formatDateWork = ({ formatDate, format }: FormatDateProps) => {
+  const dateTime = new Date(formatDate);
+
+  const options: Intl.DateTimeFormatOptions = {
+    month: "short",
+  };
+
+  // Obtén la cadena de fecha formateada
+  const formattedDate = format.dateTime(dateTime, options);
+
+  // Obtén el año por separado
+  const year = dateTime.getFullYear();
+
+  // Crea la cadena final en el formato deseado
+  const finalFormat = `${formattedDate}. ${year}`;
+
+  return finalFormat;
+};
 
 interface FormatHourProps {
   clientDate: Date;
@@ -70,8 +88,7 @@ const compareDates = (
   return dateB.getTime() - dateA.getTime();
 };
 
-
-export const getProjects = ({ addParagraph } : any) => {
+export const getProjects = ({ addParagraph }: any) => {
   const sortedPractices = [...Practices].sort(compareDates);
 
   const updatedPractices = sortedPractices.map((item) => {
