@@ -1,10 +1,12 @@
 import { imgsDesigns } from "@/constant/designs";
-import React from "react";
+import { useTranslations } from "next-intl";
+
 
 const FigmaDesigns = () => {
+  const t = useTranslations("designs");
   return (
-    <section id="figma" className="flex flex-col mt-28 rounded-xl gap-5">
-      <h2 className="text-3xl font-bold">Figma Designs</h2>
+    <section id="designs" className="flex flex-col mt-28 rounded-xl gap-5">
+      <h2 className="text-3xl font-bold">{t("title")}</h2>
       <div className="columns-2 lg:columns-3 sm:gap-8 mt-8">
         {imgsDesigns.map((entry) => (
           <img

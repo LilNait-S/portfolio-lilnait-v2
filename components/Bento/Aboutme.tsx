@@ -35,7 +35,7 @@ const Aboutme = () => {
             <span className="ml-2 hidden sm:block">Github</span>
           </Link>
           <Link
-            href="/"
+            href="mailto:lilnait.santos@gmail.com"
             className="hover:text-purple-600 transition-colors ease-in-out border-purple-600 flex items-center"
           >
             <span className="sr-only">Link to Send a email</span>

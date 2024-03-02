@@ -4,6 +4,10 @@ export const sidebarLinks = [
     route: "/",
   },
   {
+    title: "designs.title",
+    route: "#designs",
+  },
+  {
     title: "work.title",
     route: "#works",
   },

@@ -15,6 +15,10 @@
       "title": "Sobre mi",
       "route": "/"
     },
+    "designs": {
+      "title": "Diseños",
+      "route": "#designs"
+    },
     "work": {
       "title": "Trabajo",
       "route": "#works"
@@ -26,6 +30,9 @@
   },
   "footer": {
     "title": "Todos los derechos reservados."
+  },
+  "designs": {
+    "title": "Diseños en Figma"
   },
   "works": {
     "title": "Trabajos",
