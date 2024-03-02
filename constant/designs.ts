@@ -39,8 +39,4 @@ export const imgsDesigns = [
     src: "./designs/dashwt2.webp",
     alt: "dashboard web toon",
   },
-  {
-    src: "./designs/artro.webp",
-    alt: "dashboard web toon",
-  },
 ];
